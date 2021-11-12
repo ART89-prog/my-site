@@ -194,8 +194,8 @@
         <div class="container">
             <div class="about_items about_items-top">
                 <div class="about_item">
-                    <div class="about_item-title">О нашем сервисе</div>
-                    <div class="about_item-text">Сервис SMMmedia предлагает высокопрофессиональные услуги раскрутки и продвижения во всех популярных социальных сетях таких как: Instagram, VK, YouTube, Telegram, TikTok, Twiter, Like, Facebbok и многих других.</div>
+                    <div class="about_item-title title">О нашем сервисе</div>
+                    <div class="about_item-text text">Сервис SMMmedia предлагает высокопрофессиональные услуги раскрутки и продвижения во всех популярных социальных сетях таких как: Instagram, VK, YouTube, Telegram, TikTok, Twiter, Like, Facebbok и многих других.</div>
                     <div class="btn btn-primary">Заказать Накрутку</div>
                 </div>
                 <div class="about_item">
@@ -228,6 +228,152 @@
             </div>    
         </div>
     </div>
+
+
+    <div class="program">
+        <div class="container">
+            <div class="program_left">
+                <div class="program_title title">Реферальная программа</div>
+                <div class="program_text text">Приглашайте друзей, рекламируйте и получайте 10% от всех пополнений рефералов с возможностью вывода! Вы блогер или рекламодатель? Тогда ты можешь получать именно половину дохода от всех пополнений приглашённых рефералов!</div>
+                <div class="btn btn-primary">Стать партнером</div>    
+            </div>
+            <div class="program_right">
+                <div class="form-control">
+                    <div class="form-control__label d-flex justify-content-between">
+                            <span>
+                                Количество
+                            </span>
+                        <span class="range-info__data d-md-none">
+                                за 1 шт 0.33 руб.
+                            </span>
+                        <span class="d-none d-md-block">
+                                Цена
+                            </span>
+                    </div>
+                    <div class="calc-range" id="slider"></div>
+                    <div class="range-info">
+                        <input type="text" class="form-control__field" id="slider-span" value="15">
+                        <span class="range-info__data d-none d-md-inline-block">
+                                за 1 шт 0.33 руб.
+                            </span>
+                        <span class="range-info__data">
+                                1453.62 руб.
+                            </span>
+
+                        <script>
+                            var sliderFormat = document.getElementById('slider');
+                            noUiSlider.create(sliderFormat, {
+                                start: [50],
+                                step: 1,
+                                connect: 'lower',
+                                range: {
+                                    'min': [10],
+                                    'max': [1000]
+                                },
+                                format: wNumb({
+                                    decimals: 0
+                                })
+                            });
+                            var inputFormat = document.getElementById('slider-span');
+                            sliderFormat.noUiSlider.on('update', function (values, handle) {
+                                inputFormat.value = values[handle];
+                            });
+                            inputFormat.addEventListener('change', function () {
+                                sliderFormat.noUiSlider.set(this.value);
+                            });
+                        </script>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="withdrawal">
+        <div class="container">
+            <div class="image animate__animated animate__fadeInLeft">
+                <img data-src="img/visa.png" alt="" class="lozad" src="img/visa.png">
+            </div>
+
+            <div class="info">
+                <div class="title">Вывод средств</div>
+
+                <div class="desc">Мы позволяем выводить срадства через множество способов.<br>
+                    Например:</div>
+
+                <div class="list">
+                    <div>
+                        <img data-src="https://alfaposting.com/landing/images/ic_pluses1.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses1.svg" data-loaded="true">
+                        <div>Сами ищем и подбираем фотографии</div>
+                    </div>
+
+                    <div>
+                        <img data-src="https://alfaposting.com/landing/images/ic_pluses2.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses2.svg" data-loaded="true">
+                        <div>Готовим контент план на месяц вперед</div>
+                    </div>
+
+                    <div>
+                        <img data-src="https://alfaposting.com/landing/images/ic_pluses3.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses3.svg" data-loaded="true">
+                        <div>Пишем интересные описание к постам</div>
+                    </div>
+
+                    <div>
+                        <img data-src="https://alfaposting.com/landing/images/ic_pluses4.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses4.svg" data-loaded="true">
+                        <div>Подбираем подходящие хэштэги</div>
+                    </div>
+
+                    <div>
+                        <img data-src="https://alfaposting.com/landing/images/ic_pluses5.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses5.svg" data-loaded="true">
+                        <div>Можем сами публиковать посты на вашей странице</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <div class="footer-col__row">
+                    <a href="" class="logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="soc">
+                        <a href="">
+                            <img src="img/msg/vk.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/msg/ytb.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/msg/tg.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/msg/tiktok.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    Copyright © 2021 smm.media Все права защищены
+                </div>
+            </div>
+            <div class="footer-col">
+                <p><a href="" class="footer-link">Правила пользования</a></p>
+                <p><a href="" class="footer-link">Политика конфедициальности</a></p>
+            </div>
+        </div>
+    </footer>
 
 
 
