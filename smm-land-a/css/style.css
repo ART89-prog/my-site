@@ -1,27 +1,28 @@
 
+.section--main:before {
+    bottom: 27%;
+}
 
 .about {
-    padding-top: 80px;
-}
-.about_items {
+    padding-top: 93px;
+    padding-bottom: 28px;
 }
 .about_items-top {
     display: flex;
-    align-items: stretch;
+    align-items: stretch;    
 }
 .about_items-top .about_item:first-child {
-    flex-basis: 480px;
+    flex-basis: 498px;
     padding: 0;
     padding-right: 37px;
+    margin-top: 11px;
 }
 .about_items-top .about_item:nth-child(2) {
     background: #F6FAF9;
-    padding: 34px 44px 61px 41px;
+    padding: 34px 38px 61px 38px;
 }
 .about_item {
     padding: 34px 8px 61px 41px;    
-}
-.about_item-title {
 }
 .title {
     font-weight: bold;
@@ -39,14 +40,17 @@
     margin-bottom: 30px;
 }
 .about .btn {
-    padding: 15px 17px;  
+    padding: 15px 26px;  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 }
 .about .icon {
     width: 55px;
     height: 55px;
 }
 .about_item-subtitle {
-    margin-top: 33px;
+    margin-top: 30px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -65,7 +69,7 @@
 .about_items-bottom {
     display: flex;
     align-items: stretch;
-    margin-left: 147px;
+    margin-left: 174px;
 }
 .about_items-bottom > * {
     margin-left: -12px;
@@ -88,6 +92,12 @@
     display: flex;
     justify-content: space-between;
 }
+.program .btn {
+    padding: 15px 20px;  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
 .program_left {
     max-width: 587px;
     width: 100%;
@@ -95,7 +105,7 @@
 }
 .program_right {
     position: relative;
-    padding: 29px 23px;
+    padding: 29px 19px 29px 25px;
     background: #fff;
     max-width: 420px;
     width: 100%;
@@ -130,7 +140,7 @@
     margin-bottom: 10px;
 }
 .program .form-control {
-    padding: 10px 14px 12px;
+    padding: 10px 17px 9px;
     background: linear-gradient(270deg, #FFFFFF 0%, #F0EEF9 100%);
     border-radius: 8px;
 }
@@ -176,7 +186,7 @@
 
 
 .withdrawal {
-    padding: 100px 0 50px;
+    padding: 60px 0 50px;
     background: #FAFAFA;
 }
 .withdrawal .icon {
@@ -186,7 +196,6 @@
 }
 .withdrawal .container {
     display: flex;
-    align-items: center;
 }
 .withdrawal-image {
     width: 590px;
@@ -197,7 +206,8 @@
     height: 100%;
 }
 .withdrawal .info {
-    margin-left: 80px;
+    margin-left: 63px;
+    margin-top: 87px;
 }
 .list-item {
     display: flex;
@@ -217,7 +227,7 @@
 
 
 .reviews {
-    padding: 74px 0 65px;
+    padding: 78px 0 65px;
 }
 .reviews .title {
     text-align: center;
@@ -229,7 +239,7 @@
     text-align: center;
 }
 .reviews_items {
-    padding: 27px 0 27px;
+    padding: 18px 0 27px;
 }
 .reviews_item {
     background: #FFFFFF;
@@ -295,7 +305,7 @@
 }
 .slick-dots li{
 	list-style: none;
-	margin: 0px 10px;
+	margin: 0px 3px;
 }
 .slick-dots button{
 	font-size: 0;
@@ -312,10 +322,14 @@
 
 
 .post {
+    padding-top: 40px;
     padding-bottom: 93px;
 }
 .post .title {
     text-align: center;
+}
+.post_items {
+    margin-top: 43px;
 }
 .post_item {
     background: #FFFFFF;
