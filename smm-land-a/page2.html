@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/tippy.css">
     <link rel="stylesheet" href="css/light.css">
     <link rel="stylesheet" href="css/scale.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,6 +24,8 @@
     <script src="js/popper.js"></script>
     <script src="js/tippy-bundle.umd.js"></script>
     <script src="js/wNumb.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/in-view.min.js"></script>
     <script src="js/my.js"></script>
 
 <title>SMM MEDIA</title>
@@ -278,7 +282,7 @@
 
     <div class="withdrawal">
         <div class="container">
-            <div class="withdrawal-image animate__animated animate__fadeInLeft">
+            <div class="withdrawal-image">
                 <img data-src="img/visa.png" alt="" class="lozad" src="img/visa.png">
             </div>
             <div class="info">
@@ -304,13 +308,156 @@
         </div>
     </div>
 
-    
 
 
 
+    <div class="reviews">
+        <div class="container">
+            <div class="title">Наши Довольные Клиенты</div>
+            <div class="text">Сервис SMMmedia предлагает высокопрофессиональные услуги раскрутки и продвижения<br> во всех популярных социальных сетях</div>
+            <div class="reviews_quotation">
+                <img src="img/quote.png" alt="">
+            </div>
+            <div class="reviews_items reviews-slider">
+                <div class="reviews_item">
+                    <div class="reviews_item-avatar">
+                        <img src="img/author1.png" alt="">
+                    </div>
+                    <div class="reviews_item-text">«Профессионально оценили ситуацию, конкуренцию, и предложили нам оптимальную рекламную стратегию по соотношению "цена-качество". Сейчас мы используем и VK и контекстную рекламу, не тратим деньги безрезультатно»</div>
+                    <div class="reviews_item-bottom">
+                        <div class="reviews_item-author">
+                            <div class="reviews_item-name">Мария Петрова</div>
+                            <div class="reviews_item-date">31 октября 2021</div>
+                        </div> 
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-rating"></use></svg>   
+                    </div>                    
+                </div>
+                <div class="reviews_item">
+                    <div class="reviews_item-avatar">
+                        <img src="img/author2.png" alt="">
+                    </div>
+                    <div class="reviews_item-text">«Профессионально оценили ситуацию, конкуренцию, и предложили нам оптимальную рекламную стратегию по соотношению "цена-качество". Сейчас мы используем и VK и контекстную рекламу, не тратим деньги безрезультатно»</div>
+                    <div class="reviews_item-bottom">
+                        <div class="reviews_item-author">
+                            <div class="reviews_item-name">Мария Петрова</div>
+                            <div class="reviews_item-date">31 октября 2021</div>
+                        </div> 
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-rating"></use></svg>   
+                    </div>                    
+                </div>
+                <div class="reviews_item">
+                    <div class="reviews_item-avatar">
+                        <img src="img/author3.png" alt="">
+                    </div>
+                    <div class="reviews_item-text">«Профессионально оценили ситуацию, конкуренцию, и предложили нам оптимальную рекламную стратегию по соотношению "цена-качество". Сейчас мы используем и VK и контекстную рекламу, не тратим деньги безрезультатно»</div>
+                    <div class="reviews_item-bottom">
+                        <div class="reviews_item-author">
+                            <div class="reviews_item-name">Мария Петрова</div>
+                            <div class="reviews_item-date">31 октября 2021</div>
+                        </div> 
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-rating"></use></svg>   
+                    </div>                    
+                </div>
+                <div class="reviews_item">
+                    <div class="reviews_item-avatar">
+                        <img src="img/author1.png" alt="">
+                    </div>
+                    <div class="reviews_item-text">«Профессионально оценили ситуацию, конкуренцию, и предложили нам оптимальную рекламную стратегию по соотношению "цена-качество". Сейчас мы используем и VK и контекстную рекламу, не тратим деньги безрезультатно»</div>
+                    <div class="reviews_item-bottom">
+                        <div class="reviews_item-author">
+                            <div class="reviews_item-name">Мария Петрова</div>
+                            <div class="reviews_item-date">31 октября 2021</div>
+                        </div> 
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-rating"></use></svg>   
+                    </div>                    
+                </div>
+                <div class="reviews_item">
+                    <div class="reviews_item-avatar">
+                        <img src="img/author2.png" alt="">
+                    </div>
+                    <div class="reviews_item-text">«Профессионально оценили ситуацию, конкуренцию, и предложили нам оптимальную рекламную стратегию по соотношению "цена-качество". Сейчас мы используем и VK и контекстную рекламу, не тратим деньги безрезультатно»</div>
+                    <div class="reviews_item-bottom">
+                        <div class="reviews_item-author">
+                            <div class="reviews_item-name">Мария Петрова</div>
+                            <div class="reviews_item-date">31 октября 2021</div>
+                        </div> 
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-rating"></use></svg>   
+                    </div>                    
+                </div>
+                <div class="reviews_item">
+                    <div class="reviews_item-avatar">
+                        <img src="img/author3.png" alt="">
+                    </div>
+                    <div class="reviews_item-text">«Профессионально оценили ситуацию, конкуренцию, и предложили нам оптимальную рекламную стратегию по соотношению "цена-качество". Сейчас мы используем и VK и контекстную рекламу, не тратим деньги безрезультатно»</div>
+                    <div class="reviews_item-bottom">
+                        <div class="reviews_item-author">
+                            <div class="reviews_item-name">Мария Петрова</div>
+                            <div class="reviews_item-date">31 октября 2021</div>
+                        </div> 
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-rating"></use></svg>   
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <div class="post">
+        <div class="container">
+            <div class="title">Последние статьи</div>
+            <div class="post_items post-slider">
+                <div class="post_item">
+                    <div class="post_item-date">31 октября 2021</div>     
+                    <div class="post_item-title">Как добиться 1 млн подписчиков в Instagram?</div>  
+                    <div class="post_item-text">CRM-система вместо начальника: как управлять отделом продаж с помощью фильтрв и отчетов</div>        
+                    <a href="#" class="post_item-link">
+                        <span>Подробнее</span>
+                    </a>
+                </div>   
+                <div class="post_item">
+                    <div class="post_item-date">31 октября 2021</div>     
+                    <div class="post_item-title">Как добиться 1 млн подписчиков в Instagram?</div>  
+                    <div class="post_item-text">CRM-система вместо начальника: как управлять отделом продаж с помощью фильтрв и отчетов</div>        
+                    <a href="#" class="post_item-link">
+                        <span>Подробнее</span>
+                    </a>
+                </div>
+                <div class="post_item">
+                    <div class="post_item-date">31 октября 2021</div>     
+                    <div class="post_item-title">Как добиться 1 млн подписчиков в Instagram?</div>  
+                    <div class="post_item-text">CRM-система вместо начальника: как управлять отделом продаж с помощью фильтрв и отчетов</div>        
+                    <a href="#" class="post_item-link">
+                        <span>Подробнее</span>
+                    </a>
+                </div>
+                <div class="post_item">
+                    <div class="post_item-date">31 октября 2021</div>     
+                    <div class="post_item-title">Как добиться 1 млн подписчиков в Instagram?</div>  
+                    <div class="post_item-text">CRM-система вместо начальника: как управлять отделом продаж с помощью фильтрв и отчетов</div>        
+                    <a href="#" class="post_item-link">
+                        <span>Подробнее</span>
+                    </a>
+                </div>
+                <div class="post_item">
+                    <div class="post_item-date">31 октября 2021</div>     
+                    <div class="post_item-title">Как добиться 1 млн подписчиков в Instagram?</div>  
+                    <div class="post_item-text">CRM-система вместо начальника: как управлять отделом продаж с помощью фильтрв и отчетов</div>        
+                    <a href="#" class="post_item-link">
+                        <span>Подробнее</span>
+                    </a>
+                </div>
+                <div class="post_item">
+                    <div class="post_item-date">31 октября 2021</div>     
+                    <div class="post_item-title">Как добиться 1 млн подписчиков в Instagram?</div>  
+                    <div class="post_item-text">CRM-система вместо начальника: как управлять отделом продаж с помощью фильтрв и отчетов</div>        
+                    <a href="#" class="post_item-link">
+                        <span>Подробнее</span>
+                    </a>
+                </div>
 
+            </div>
+        </div>
+    </div>
 
 
 
@@ -478,6 +625,9 @@
             <stop offset="1" stop-color="#333DBD"/>
             </linearGradient>
             </defs>
+        </symbol>        
+        <symbol id="icon-rating" width="88" height="18" viewBox="0 0 88 18">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.796 0.393224C8.91643 0.150833 9.16355 -0.0016638 9.43318 2.7626e-05C9.69948 0.00184141 9.9422 0.153815 10.0611 0.393224L12.4902 5.27441L18.2579 6.16627C18.5212 6.20715 18.7392 6.39318 18.8221 6.64757C18.9049 6.90195 18.8384 7.18152 18.6501 7.37084L14.6604 11.3796L15.549 17.1813C15.5895 17.446 15.4785 17.7111 15.2618 17.8671C15.0451 18.023 14.7596 18.0433 14.5232 17.9196L9.42857 15.2487L4.33391 17.9196C4.09753 18.0433 3.812 18.023 3.59532 17.8671C3.37865 17.7111 3.26764 17.446 3.30817 17.1813L4.19672 11.3796L0.206995 7.37084C0.0186967 7.18152 -0.0477534 6.90195 0.0350828 6.64757C0.117919 6.39318 0.335988 6.20715 0.599246 6.16627L6.36699 5.27441L8.796 0.393224ZM31.5817 0.393224C31.7021 0.150833 31.9493 -0.0016638 32.2189 2.7626e-05C32.4852 0.00184141 32.7279 0.153815 32.8469 0.393224L35.2759 5.27441L41.0436 6.16627C41.3069 6.20715 41.5249 6.39318 41.6078 6.64757C41.6906 6.90195 41.6242 7.18152 41.4359 7.37084L37.4461 11.3796L38.3347 17.1813C38.3752 17.446 38.2642 17.7111 38.0475 17.8671C37.8309 18.023 37.5453 18.0433 37.3089 17.9196L32.2143 15.2487L27.1196 17.9196C26.8832 18.0433 26.5977 18.023 26.381 17.8671C26.1644 17.7111 26.0534 17.446 26.0939 17.1813L26.9824 11.3796L22.9927 7.37084C22.8044 7.18152 22.738 6.90195 22.8208 6.64757C22.9036 6.39318 23.1217 6.20715 23.385 6.16627L29.1527 5.27441L31.5817 0.393224ZM55.0046 2.7626e-05C54.735 -0.0016638 54.4879 0.150833 54.3674 0.393224L51.9384 5.27441L46.1707 6.16627C45.9074 6.20715 45.6894 6.39318 45.6065 6.64757C45.5237 6.90195 45.5901 7.18152 45.7784 7.37084L49.7682 11.3796L48.8796 17.1813C48.8391 17.446 48.9501 17.7111 49.1668 17.8671C49.3834 18.023 49.669 18.0433 49.9053 17.9196L55 15.2487L60.0947 17.9196C60.331 18.0433 60.6166 18.023 60.8333 17.8671C61.0499 17.7111 61.1609 17.446 61.1204 17.1813L60.2319 11.3796L64.2216 7.37084C64.4099 7.18152 64.4763 6.90195 64.3935 6.64757C64.3107 6.39318 64.0926 6.20715 63.8293 6.16627L58.0616 5.27441L55.6326 0.393224C55.5136 0.153815 55.2709 0.00184141 55.0046 2.7626e-05ZM77.1531 0.393224C77.2736 0.150833 77.5207 -0.0016638 77.7903 2.7626e-05C78.0566 0.00184141 78.2993 0.153815 78.4183 0.393224L80.8473 5.27441L86.615 6.16627C86.8783 6.20715 87.0964 6.39318 87.1792 6.64757C87.262 6.90195 87.1956 7.18152 87.0073 7.37084L83.0176 11.3796L83.9061 17.1813C83.9466 17.446 83.8356 17.7111 83.619 17.8671C83.4023 18.023 83.1167 18.0433 82.8804 17.9196L77.7857 15.2487L72.6911 17.9196C72.4547 18.0433 72.1691 18.023 71.9525 17.8671C71.7358 17.7111 71.6248 17.446 71.6653 17.1813L72.5539 11.3796L68.5641 7.37084C68.3758 7.18152 68.3094 6.90195 68.3922 6.64757C68.4751 6.39318 68.6931 6.20715 68.9564 6.16627L74.7241 5.27441L77.1531 0.393224Z" fill="#FFAD29"/>
         </symbol>
             
 

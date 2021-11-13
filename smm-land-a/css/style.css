@@ -189,13 +189,15 @@
     align-items: center;
 }
 .withdrawal-image {
-
+    width: 590px;
+    height: 508px;
+}
+.withdrawal-image img {
+    width: 100%;
+    height: 100%;
 }
 .withdrawal .info {
     margin-left: 80px;
-}
-.list {
-
 }
 .list-item {
     display: flex;
@@ -208,4 +210,232 @@
 }
 .list-item:last-child {
     margin-bottom: 0px;
+}
+
+
+
+
+
+.reviews {
+    padding: 74px 0 65px;
+}
+.reviews .title {
+    text-align: center;
+}
+.reviews .text {
+    text-align: center;
+}
+.reviews_quotation {
+    text-align: center;
+}
+.reviews_items {
+    padding: 27px 0 27px;
+}
+.reviews_item {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 25px 33px 46px;
+    margin-right: 22px;
+}
+.reviews_items > * {
+    margin-right: 0px;
+}
+.reviews_item-avatar {
+    width: 58px;
+    height: 58px;
+}
+.reviews_item-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.reviews_item-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #777777; 
+    margin-top: 20px;  
+}
+.reviews_item-bottom {
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews_item-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.45px;
+    color: #242424;
+}
+.reviews_item-date {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.4px;
+    color: #B2B2B2; 
+}
+.reviews .icon {
+    width: 88px;
+    height: 18px;
+}
+.reviews-slider {
+	min-width: 0;
+}
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+}
+.slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slick-dots button{
+	font-size: 0;
+	width: 13px;
+	height: 13px;
+	background: #D8D8D8;
+	border-radius: 50%;
+    margin-top: 60px;
+}
+.slick-dots li.slick-active button{
+	background: linear-gradient(135deg, #3087FB 0%, #333DBD 100%);
+}
+
+
+
+.post {
+    padding-bottom: 93px;
+}
+.post .title {
+    text-align: center;
+}
+.post_item {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 25px 69px 46px 33px;
+    margin-right: 22px;
+}
+.post_item-date {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.4px;
+    color: #B2B2B2; 
+    margin-bottom: 23px;
+}
+.post_item-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.45px;
+    color: #242424;
+    margin-bottom: 13px;
+}
+.post_item-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #777777;
+    margin-bottom: 31px;
+}
+.post_item-link {
+    background: linear-gradient(135deg, #3087FB 0%, #333DBD 100%);
+    border-radius: 25px;
+    width: 151px;
+    height: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.footer {
+    background: #35146a;
+    padding: 26px 0;
+}
+.footer .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@media (max-width: 735px) {
+    .footer .container {
+        display: block;
+    }
+}
+@media (max-width: 735px) {
+    .footer-col {
+        text-align: center;
+    }
+}
+.footer-col:last-child {
+    text-align: right;
+}
+@media (max-width: 735px) {
+    .footer-col:last-child {
+        text-align: center;
+    }
+}
+.footer-col__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@media (max-width: 735px) {
+    .footer-col__row {
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+.footer-link {
+    margin: 3px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    opacity: 0.37;
+    border-bottom: 1px dashed #fff;
+}
+.footer-link:hover {
+    opacity: 0.7;
+}
+.copyright {
+    margin-top: 12px;
+    opacity: 0.37;
+    color: #fff;
+}
+@media (max-width: 735px) {
+    .copyright {
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 735px) {
+    .soc {
+        margin-top: 12px;
+    }
+}
+.soc a {
+    margin: 12px;
+    opacity: 0.37;
+}
+.soc a:hover {
+    opacity: 1;
+}
+.soc a img {
+    max-width: 30px;
+    max-height: 20px;
 }
