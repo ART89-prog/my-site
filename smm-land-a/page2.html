@@ -237,55 +237,38 @@
             <div class="program_left">
                 <div class="program_title title">Реферальная программа</div>
                 <div class="program_text text">Приглашайте друзей, рекламируйте и получайте 10% от всех пополнений рефералов с возможностью вывода! Вы блогер или рекламодатель? Тогда ты можешь получать именно половину дохода от всех пополнений приглашённых рефералов!</div>
-                <div class="btn btn-primary">Стать партнером</div>    
+                <button class="btn btn-primary">
+                    <span>Стать партнером</span> 
+                <button>   
             </div>
             <div class="program_right">
                 <div class="form-control">
-                    <div class="form-control__label d-flex justify-content-between">
-                            <span>
-                                Количество
-                            </span>
-                        <span class="range-info__data d-md-none">
-                                за 1 шт 0.33 руб.
-                            </span>
-                        <span class="d-none d-md-block">
-                                Цена
-                            </span>
-                    </div>
-                    <div class="calc-range" id="slider"></div>
-                    <div class="range-info">
-                        <input type="text" class="form-control__field" id="slider-span" value="15">
-                        <span class="range-info__data d-none d-md-inline-block">
-                                за 1 шт 0.33 руб.
-                            </span>
-                        <span class="range-info__data">
-                                1453.62 руб.
-                            </span>
+                    <div class="form-control-title">Привлечено вами клиентов</div>
+                    <input type="text" class="form-control__field" id="slider-span1" value="15">
+                    <div class="calc-range" id="program-slider1"></div>                    
+                </div>    
+                <div class="form-control">
+                    <div class="form-control-title">Сколько заказов клиенты делают в месяц</div>
+                    <input type="text" class="form-control__field" id="slider-span2" value="23">
+                    <div class="calc-range" id="program-slider2"></div>                    
+                </div> 
+                <div class="form-control">
+                    <div class="form-control-title">Средняя сумма заказа</div>
+                    <input type="text" class="form-control__field" id="slider-span3" value="350 руб">
+                    <div class="calc-range" id="program-slider3"></div>                    
+                </div> 
 
-                        <script>
-                            var sliderFormat = document.getElementById('slider');
-                            noUiSlider.create(sliderFormat, {
-                                start: [50],
-                                step: 1,
-                                connect: 'lower',
-                                range: {
-                                    'min': [10],
-                                    'max': [1000]
-                                },
-                                format: wNumb({
-                                    decimals: 0
-                                })
-                            });
-                            var inputFormat = document.getElementById('slider-span');
-                            sliderFormat.noUiSlider.on('update', function (values, handle) {
-                                inputFormat.value = values[handle];
-                            });
-                            inputFormat.addEventListener('change', function () {
-                                sliderFormat.noUiSlider.set(this.value);
-                            });
-                        </script>
+                <div class="program_right-banner">
+                    <img src="img/banner.png" alt="">
+                </div>  
+                <div class="form-control-total">
+                    <svg class="icon icon-gradient"><use xlink:href="#icon-total"></use></svg>
+                    <div class="form-control-total-content">
+                        <div class="form-control-total-text">Ваш заработок в месяц составит:</div>
+                        <div class="form-control-total-money">3 970 руб</div>
                     </div>
-                </div>           
+                </div> 
+                
             </div>
         </div>
     </div>
@@ -295,45 +278,33 @@
 
     <div class="withdrawal">
         <div class="container">
-            <div class="image animate__animated animate__fadeInLeft">
+            <div class="withdrawal-image animate__animated animate__fadeInLeft">
                 <img data-src="img/visa.png" alt="" class="lozad" src="img/visa.png">
             </div>
-
             <div class="info">
-                <div class="title">Вывод средств</div>
-
-                <div class="desc">Мы позволяем выводить срадства через множество способов.<br>
-                    Например:</div>
-
+                <div class="title">Вывод средств</div> 
+                <div class="text">Мы позволяем выводить срадства через множество способов.<br>
+                    Например:
+                </div>            
                 <div class="list">
-                    <div>
-                        <img data-src="https://alfaposting.com/landing/images/ic_pluses1.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses1.svg" data-loaded="true">
-                        <div>Сами ищем и подбираем фотографии</div>
+                    <div class="list-item">
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-card"></use></svg>
+                        <div>Карты (Visa, MasterCard, Maestro, Мир)</div>
                     </div>
-
-                    <div>
-                        <img data-src="https://alfaposting.com/landing/images/ic_pluses2.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses2.svg" data-loaded="true">
-                        <div>Готовим контент план на месяц вперед</div>
+                    <div class="list-item">
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-webmoney"></use></svg>
+                        <div>Электронные деньги (WebMoney, YooMoney, Qiwi)</div>
                     </div>
-
-                    <div>
-                        <img data-src="https://alfaposting.com/landing/images/ic_pluses3.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses3.svg" data-loaded="true">
-                        <div>Пишем интересные описание к постам</div>
-                    </div>
-
-                    <div>
-                        <img data-src="https://alfaposting.com/landing/images/ic_pluses4.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses4.svg" data-loaded="true">
-                        <div>Подбираем подходящие хэштэги</div>
-                    </div>
-
-                    <div>
-                        <img data-src="https://alfaposting.com/landing/images/ic_pluses5.svg" alt="" class="lozad loaded" src="https://alfaposting.com/landing/images/ic_pluses5.svg" data-loaded="true">
-                        <div>Можем сами публиковать посты на вашей странице</div>
+                    <div class="list-item">
+                        <svg class="icon icon-gradient"><use xlink:href="#icon-balance-phone"></use></svg>
+                        <div>Баланс телефона (МТС, Мегафон, Билайн, Теле2, Yota)</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    
 
 
 
@@ -395,6 +366,7 @@
 <svg class="icon icon-gradient"><use xlink:href="#icon-advantage3"></use></svg>
 <svg class="icon icon-gradient"><use xlink:href="#icon-advantage4"></use></svg>
 <svg class="icon icon-gradient"><use xlink:href="#icon-advantage5"></use></svg>
+<svg class="icon icon-gradient"><use xlink:href="#icon-total"></use></svg>
 
 
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -473,6 +445,39 @@
             <stop offset="1" stop-color="#333DBD"/>
             </linearGradient>
             </defs>
+        </symbol>        
+        <symbol id="icon-total" width="35" height="41" viewBox="0 0 35 41">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.68421 0C1.65789 0 0 1.67727 0 3.72727V27.9545C0 28.9833 0.825263 29.8182 1.84211 29.8182C2.85895 29.8182 3.68421 28.9833 3.68421 27.9545V3.72727H23.9474C24.9642 3.72727 25.7895 2.89236 25.7895 1.86364C25.7895 0.834909 24.9642 0 23.9474 0H3.68421ZM11.0526 7.45455C9.02632 7.45455 7.36842 9.13182 7.36842 11.1818V37.2727C7.36842 39.3227 9.02632 41 11.0526 41H31.3158C33.3421 41 35 39.3227 35 37.2727V18.3161C35 17.3283 34.6114 16.3796 33.9206 15.6808L26.8688 8.54652C26.178 7.84766 25.2403 7.45455 24.264 7.45455H11.0526ZM21.8462 20.4563H20.9108C20.3581 20.4563 20.076 21.1313 20.4646 21.5301L22.2024 23.3137L18.4211 27.1392L16.0357 24.7296C15.3172 24.0009 14.1547 24.0009 13.4344 24.7296C12.716 25.4564 12.716 26.6362 13.4344 27.3649L17.1942 31.1722C17.8721 31.8562 18.9683 31.8562 19.6443 31.1722L19.7235 31.0922L24.8288 25.9271L26.5738 27.6415C26.9699 28.031 27.6316 27.7493 27.6316 27.1902V26.3967V21.4245V21.3881C27.6316 20.8738 27.2189 20.4563 26.7105 20.4563H26.6745H21.8462Z" fill="white"/>
+        </symbol>
+        <symbol id="icon-card" width="40" height="40" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_0_434)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 14C10 12.895 10.895 12 12 12H28C29.105 12 30 12.895 30 14C30 14.552 29.552 15 29 15H11C10.448 15 10 14.552 10 14ZM10 19C10 18.448 10.448 18 11 18H29C29.552 18 30 18.448 30 19V26C30 27.105 29.105 28 28 28H12C10.895 28 10 27.105 10 26V19Z" fill="white"/>
+            <defs>
+            <linearGradient id="paint0_linear_0_434" x1="-20" y1="20" x2="20" y2="60" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3087FB"/>
+            <stop offset="1" stop-color="#333DBD"/>
+            </linearGradient>
+            </defs>
+        </symbol>                
+        <symbol id="icon-webmoney" width="40" height="40" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_0_442)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C12 13.582 15.582 10 20 10C24.418 10 28 13.582 28 18C28 22.0786 24.9451 25.4386 21 25.9316V27.8027C21.675 27.4094 22.6221 27 23.6953 27C24.9473 27 26.0537 27.565 26.7227 28.002C27.0927 28.244 27.0927 28.756 26.7227 28.998C26.0537 29.434 24.9473 30 23.6953 30C22.4277 30 21.3647 29.4385 20.6992 29H19.3008C18.6353 29.4385 17.5723 30 16.3047 30C15.0527 30 13.9463 29.435 13.2773 28.998C12.9073 28.756 12.9073 28.244 13.2773 28.002C13.9463 27.566 15.0527 27 16.3047 27C17.3779 27 18.325 27.4094 19 27.8027V25.9316C15.0549 25.4386 12 22.0786 12 18ZM20.2207 11.5996H20.2148C19.9378 11.5996 19.7129 11.8246 19.7129 12.1016V13.0293C19.3739 13.0723 17.4766 13.4288 17.4766 15.7188C17.4766 17.5577 18.5245 18.0851 19.4668 18.5594C20.2364 18.9468 20.9355 19.2987 20.9355 20.3008C20.9355 21.4168 20.2134 21.4434 20.0664 21.4434C20.0621 21.4434 20.0569 21.4434 20.0511 21.4435C19.902 21.4456 19.2815 21.4545 19.1016 20.4336C19.0366 20.0626 18.6885 19.8066 18.3105 19.8066H18.0488C17.5538 19.8066 17.1511 20.2513 17.2461 20.7363C17.6328 22.7081 19.2293 22.9242 19.5532 22.9681C19.5602 22.969 19.5665 22.9699 19.5723 22.9707V23.8008C19.5723 24.0778 19.7972 24.3008 20.0742 24.3008C20.3512 24.3008 20.5742 24.0778 20.5742 23.8008V22.9707C20.9122 22.9287 22.8242 22.6132 22.8242 20.2852C22.8242 18.4881 21.7371 17.8915 20.7821 17.3674C20.0339 16.9568 19.3667 16.5907 19.3672 15.7266C19.3672 14.5996 19.9871 14.5645 20.1211 14.5645C20.3171 14.5645 20.7297 14.7049 20.8867 15.4629C20.9677 15.8569 21.2855 16.1543 21.6875 16.1543H21.9453C22.4693 16.1543 22.8503 15.6604 22.7363 15.1484C22.3513 13.4154 20.9967 13.1096 20.7227 13.0566V12.1016C20.7227 11.8246 20.4977 11.5996 20.2207 11.5996Z" fill="white"/>
+            <defs>
+            <linearGradient id="paint0_linear_0_442" x1="-20" y1="20" x2="20" y2="60" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3087FB"/>
+            <stop offset="1" stop-color="#333DBD"/>
+            </linearGradient>
+            </defs>
+        </symbol>        
+        <symbol id="icon-balance-phone" width="40" height="40" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="20" fill="url(#paint0_linear_0_450)"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.5 9H15.5C14.12 9 13 10.12 13 11.5V28.5C13 29.88 14.12 31 15.5 31H24.5C25.88 31 27 29.88 27 28.5V11.5C27 10.12 25.88 9 24.5 9ZM20 29.125C19.378 29.125 18.875 28.622 18.875 28C18.875 27.378 19.378 26.875 20 26.875C20.622 26.875 21.125 27.378 21.125 28C21.125 28.622 20.622 29.125 20 29.125ZM16 26H24C24.552 26 25 25.552 25 25V13C25 12.448 24.552 12 24 12H16C15.448 12 15 12.448 15 13V25C15 25.552 15.448 26 16 26Z" fill="white"/>
+            <defs>
+            <linearGradient id="paint0_linear_0_450" x1="-20" y1="20" x2="20" y2="60" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3087FB"/>
+            <stop offset="1" stop-color="#333DBD"/>
+            </linearGradient>
+            </defs>
         </symbol>
             
 
@@ -483,6 +488,77 @@
 
     </defs>
 </svg>
+
+
+
+<script>
+    var sliderFormat = document.getElementById('program-slider1');
+    noUiSlider.create(sliderFormat, {
+        start: [0],
+        step: 1,
+        connect: 'lower',
+        range: {
+            'min': [0],
+            'max': [100]
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+    var inputFormat = document.getElementById('slider-span1');
+    sliderFormat.noUiSlider.on('update', function (values, handle) {
+        inputFormat.value = values[handle];
+    });
+    inputFormat.addEventListener('change', function () {
+        sliderFormat.noUiSlider.set(this.value);
+    });
+</script>
+
+<script>
+    var sliderFormat = document.getElementById('program-slider2');
+    noUiSlider.create(sliderFormat, {
+        start: [0],
+        step: 1,
+        connect: 'lower',
+        range: {
+            'min': [0],
+            'max': [100]
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+    var inputFormat = document.getElementById('slider-span2');
+    sliderFormat.noUiSlider.on('update', function (values, handle) {
+        inputFormat.value = values[handle];
+    });
+    inputFormat.addEventListener('change', function () {
+        sliderFormat.noUiSlider.set(this.value);
+    });
+</script>
+
+<script>
+    var sliderFormat = document.getElementById('program-slider3');
+    noUiSlider.create(sliderFormat, {
+        start: [0],
+        step: 1,
+        connect: 'lower',
+        range: {
+            'min': [0],
+            'max': [1000]
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+    var inputFormat = document.getElementById('slider-span3');
+    sliderFormat.noUiSlider.on('update', function (values, handle) {
+        inputFormat.value = values[handle];
+    });
+    inputFormat.addEventListener('change', function () {
+        sliderFormat.noUiSlider.set(this.value);
+    });
+</script>
 
 </body>
 </html>

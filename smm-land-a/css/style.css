@@ -9,9 +9,6 @@
     display: flex;
     align-items: stretch;
 }
-/* .about_items-top > * {
-    width: calc(100%/3);
-} */
 .about_items-top .about_item:first-child {
     flex-basis: 480px;
     padding: 0;
@@ -34,21 +31,15 @@
     color: #000000;   
     margin-bottom: 29px;
 }
-.about_items-top .text {
+.text {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     color: #777777;
     margin-bottom: 30px;
 }
-.text {    
-
-}
 .about .btn {
     padding: 15px 17px;  
-}
-.btn-primary {
-    
 }
 .about .icon {
     width: 55px;
@@ -86,4 +77,135 @@
 }
 .about_items-bottom .about_item:nth-child(2) {
     background: #fff;
+}
+
+
+.program {
+    padding: 79px 0 69px;
+    background: #FAFAFA;
+}
+.program .container {
+    display: flex;
+    justify-content: space-between;
+}
+.program_left {
+    max-width: 587px;
+    width: 100%;
+    margin-top: 119px;
+}
+.program_right {
+    position: relative;
+    padding: 29px 23px;
+    background: #fff;
+    max-width: 420px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 88px rgba(86, 44, 147, 0.292282);
+    border-radius: 23px;
+}
+.program_right .noUi-horizontal .noUi-handle {
+    background: #fff;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.131296);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    top: -5px;
+}
+.program_right .calc-range {
+    height: 7px;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 3px;
+    border: none;
+}
+.program .form-control__field {
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #136EEC;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.program .form-control {
+    padding: 10px 14px 12px;
+    background: linear-gradient(270deg, #FFFFFF 0%, #F0EEF9 100%);
+    border-radius: 8px;
+}
+.form-control-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #5F5F5F;   
+}
+.program_right-banner {
+    position: absolute;
+    bottom: 0;
+    left: -118px;
+    z-index: -1;
+}
+.form-control-total {
+    padding: 16px 19px 21px;
+    background: linear-gradient(135deg, #3087FB 0%, #333DBD 100%);
+    border-radius: 8px;  
+    display: flex;  
+    align-items: center;
+}
+.form-control-total-content {
+    margin-left: 18px;
+}
+.form-control-total .icon {
+   width: 35px;
+   height: 41px; 
+}
+.form-control-total-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.form-control-total-money {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+
+
+.withdrawal {
+    padding: 100px 0 50px;
+    background: #FAFAFA;
+}
+.withdrawal .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+.withdrawal .container {
+    display: flex;
+    align-items: center;
+}
+.withdrawal-image {
+
+}
+.withdrawal .info {
+    margin-left: 80px;
+}
+.list {
+
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2E2E2E;
+}
+.list-item:last-child {
+    margin-bottom: 0px;
 }
