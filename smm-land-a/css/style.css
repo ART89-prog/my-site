@@ -12,7 +12,7 @@
     align-items: stretch;    
 }
 .about_items-top .about_item:first-child {
-    flex-basis: 498px;
+    width: 498px;
     padding: 0;
     padding-right: 37px;
     margin-top: 11px;
@@ -102,6 +102,7 @@
     max-width: 587px;
     width: 100%;
     margin-top: 119px;
+    margin-right: 30px;
 }
 .program_right {
     position: relative;
@@ -144,6 +145,21 @@
     background: linear-gradient(270deg, #FFFFFF 0%, #F0EEF9 100%);
     border-radius: 8px;
 }
+.program .form-control__field-last {
+    width: 15%;
+}
+.program .form-control-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.program .form-control-wrap div {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #136EEC;
+}
 .form-control-title {
     font-weight: normal;
     font-size: 16px;
@@ -169,6 +185,7 @@
 .form-control-total .icon {
    width: 35px;
    height: 41px; 
+   flex-shrink: 0;
 }
 .form-control-total-text {
     font-weight: normal;
@@ -192,18 +209,25 @@
 .withdrawal .icon {
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
     margin-right: 16px;
 }
 .withdrawal .container {
     display: flex;
 }
 .withdrawal-image {
-    width: 590px;
-    height: 508px;
+    width: 558px;
+    height: auto;
+    position: relative;
 }
 .withdrawal-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
+}
+.withdrawal-image-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .withdrawal .info {
     margin-left: 63px;
@@ -231,9 +255,21 @@
 }
 .reviews .title {
     text-align: center;
+    position: relative;
+}
+.reviews .title:before {
+    position: absolute;
+    content: "";
+    width: 135px;
+    height: 106px;
+    top: 155px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/quote.png);
 }
 .reviews .text {
     text-align: center;
+    margin-bottom: 160px;
 }
 .reviews_quotation {
     text-align: center;
@@ -452,4 +488,220 @@
 .soc a img {
     max-width: 30px;
     max-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+    .about_items-bottom {
+        margin-left: 0;
+        justify-content: space-between;
+    }
+    .about_items-top .about_item:first-child {
+        width: calc(100%/3);
+    }
+    .about_items-top .about_item:last-child  {
+        margin-left: 0px;
+        width: calc(100%/3);
+        padding: 34px 38px 41px 38px;
+    }
+    .about_items-top .about_item:nth-child(2) {
+        padding: 34px 8px 41px 38px;
+        width: calc(100%/3);
+    }
+    .about_items-top {
+        width: 100%;
+    }
+    .about_items-bottom > * {
+        margin-left: 0;
+    }
+    .about {
+        padding-top: 55px;
+    }
+    .program_left {
+        margin-top: 0px;
+    }
+    .program .container {
+        align-items: center;
+    }
+    .withdrawal {
+        padding: 30px 0 30px;
+    }
+    .reviews {
+        padding: 50px 0 40px;
+    }
+    .reviews_items {
+        padding: 18px 0 18px;
+    }
+    .slick-dots button {
+        margin-top: 0;
+    }
+    .post {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .withdrawal .info {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .withdrawal .container {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+}
+
+
+
+@media (max-width: 767px) {
+    .reviews .text br {
+        display: none;
+    }
+    .about_items-top {
+        flex-direction: column;
+    }
+    .about_items-bottom {
+        flex-direction: column;
+    }
+    .about_items-top .about_item:first-child {
+        width: 100%;
+        margin-top: 0;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .about_items-top .about_item:nth-child(2),
+    .about_items-top .about_item:last-child {
+        padding: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .about_item .about_item-text {
+        max-width: 100%;
+    }
+    .about_items-bottom {
+        text-align: center;
+    }
+    .about_items-bottom > * {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 25px;
+    }
+    .program .container {
+        flex-direction: column;
+    }
+    .program_left {
+        margin-right: 0;
+        order: 1;
+        margin-top: 38px;
+    }
+    .title,
+    .text {
+        text-align: center;
+    }
+    .program .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .withdrawal .container {
+        flex-direction: column;
+    }
+    .withdrawal .info {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .post_items {
+        margin-top: 0px;
+    }
+    .post_item {
+        margin-right: 0px;
+        padding: 25px;
+    }
+    .reviews .title:before {
+        top: -25px;
+        z-index: -1;
+    }
+    .reviews .text {
+        margin-bottom: 0;
+    }
+    .program_right-banner {
+        display: none;
+    }
+    .program_right {
+        max-width: 100%;
+    }
+    .withdrawal-image-banner {
+        display: none;
+    }
+    .program {
+        padding: 45px 0 10px;
+    }
+    .withdrawal .text br {
+        display: none;
+    }
+    .reviews_item {
+        margin-right: 0;
+        padding: 25px;
+    }
+
+
+}
+
+
+
+@media (max-width: 479px) {
+    .withdrawal-image {
+        width: 100%;
+    }
+    .title {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: -0.65px;
+        margin-bottom: 19px;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .about_items-top .about_item:nth-child(2), 
+    .about_items-top .about_item:last-child,
+    .about_items-bottom > * {
+        padding: 34px 20px 61px;
+        text-align: start;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: 20px;
+    }
+    .reviews_item {
+        padding: 18px;
+    }
+    .post_item {
+        padding: 18px;
+    }
+    .section--main {
+        padding-bottom: 40px;
+    }
+    .about {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .withdrawal {
+        padding: 0 0 30px;
+    }
+    .withdrawal .info {
+        margin-top: 0px;
+    }
+    .post {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
 }
