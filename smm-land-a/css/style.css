@@ -766,3 +766,202 @@
 }
 
 
+
+/* CHEATING */
+
+.header-mob {
+    display: none;
+}
+.main-content--lk .main-content__aside {
+    width: 285px;
+    padding: 30px 20px;
+    background: linear-gradient(270deg, #f0eef9 0, #fff 100%);
+    border-bottom-left-radius: 24px;
+    border-top-left-radius: 24px;
+}
+.header .lk-user__name {
+    color: #fff;
+}
+.cheating .section--main {
+    padding-bottom: 50px;
+    background: url(../img/bg.png) no-repeat top center;
+    background-size: cover;
+}
+.main-content--lk .main-content__form {
+    width: calc(100% - 285px);
+}
+.main-content--lk .main-content__form .main-content__head {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+}
+.main-content--lk .main-content__form {
+    width: calc(100% - 285px);
+    padding: 30px 20px;
+}
+@media (max-width: 990px) {
+    .main-content--lk .main-content__form {
+        width: 100%;
+    }
+}
+@media (max-width: 990px) {
+    .open-menu {
+        margin-right: 20px;
+        width: 32px;
+        height: 32px    ;
+        background: url(../img/lk-menu/menu.svg) no-repeat center;
+    }
+    .header-mob__title {
+        max-width: calc(100% - 32px - 20px);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: -0.6px;
+        color: #fff;
+    }
+    .header-mob {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .header .lk-user {
+        display: none;
+    }
+    .aside--lk {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        overflow: auto;
+        padding: 32px 16px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+    .aside--lk.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+}
+.aside--lk__head {
+    display: none;
+}
+@media (max-width: 990px) {
+    .aside--lk__head {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.overlay--lk {
+    display: none;
+}
+@media (max-width: 990px) {
+    .overlay--lk {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        overflow: auto;
+        background: #484848;
+        opacity: 0.7;
+    }
+    .overlay--lk.active {
+        display: block;
+    }
+}
+.lk-menu a {
+    display: block;
+    padding: 16px 12px 16px 58px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+.lk-menu a:hover {
+    background: #e0dced;
+}
+.lk-menu a.active {
+    color: #3178ef;
+    background: linear-gradient(270deg, #fff 0, #fff 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0716894);
+}
+.lk-menu a span {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 12px;
+    top: 50%;
+    margin-top: -12px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.lk-menu a span img {
+    max-height: 100%;
+}
+.lk-user {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.lk-user__photo {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.lk-user__photo img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+.lk-user__info {
+    width: calc(100% - 60px);
+    padding-left: 18px;
+}
+.lk-user__name {
+    margin-bottom: 4px;
+    font-weight: 700;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.lk-user__name .icon {
+    width: 16px;
+    height: 16px;
+    margin: 2px 4px;
+}
+.lk-user p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.exit {
+    display: none;
+}
+@media (max-width: 990px) {
+    .exit {
+        display: block;
+    }
+}
