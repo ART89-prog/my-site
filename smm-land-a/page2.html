@@ -27,6 +27,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/in-view.min.js"></script>
     <script src="js/my.js"></script>
+    <script src="js/my-js.js"></script>
 
 <title>SMM MEDIA</title>
 </head>
@@ -194,12 +195,13 @@
         </div>
     </div>
 
+
     <div class="about">
         <div class="container">
             <div class="about_items-top">
                 <div class="about_item">
-                    <div class="about_item-title title">О нашем сервисе</div>
-                    <div class="text">Сервис SMMmedia предлагает высокопрофессиональные услуги раскрутки и продвижения во всех популярных социальных сетях таких как: Instagram, VK, YouTube, Telegram, TikTok, Twiter, Like, Facebbok и многих других.</div>
+                    <div class="about_title">О нашем сервисе</div>
+                    <div class="about_text">Сервис SMMmedia предлагает высокопрофессиональные услуги раскрутки и продвижения во всех популярных социальных сетях таких как: Instagram, VK, YouTube, Telegram, TikTok, Twiter, Like, Facebbok и многих других.</div>
                     <button class="btn btn-primary">
                         <span>Заказать Накрутку</span> 
                     <button>
@@ -239,8 +241,8 @@
     <div class="program">
         <div class="container">
             <div class="program_left">
-                <div class="program_title title">Реферальная программа</div>
-                <div class="program_text text">Приглашайте друзей, рекламируйте и получайте 10% от всех пополнений рефералов с возможностью вывода! Вы блогер или рекламодатель? Тогда ты можешь получать именно половину дохода от всех пополнений приглашённых рефералов!</div>
+                <div class="program_title">Реферальная программа</div>
+                <div class="program_text">Приглашайте друзей, рекламируйте и получайте 10% от всех пополнений рефералов с возможностью вывода! Вы блогер или рекламодатель? Тогда ты можешь получать именно половину дохода от всех пополнений приглашённых рефералов!</div>
                 <button class="btn btn-primary">
                     <span>Стать партнером</span> 
                 <button>   
@@ -248,18 +250,18 @@
             <div class="program_right">
                 <div class="form-control">
                     <div class="form-control-title">Привлечено вами клиентов</div>
-                    <input type="text" class="form-control__field" id="slider-span1" value="15">
+                    <span class="form-control__field" id="slider-span1">15</span>
                     <div class="calc-range" id="program-slider1"></div>                    
                 </div>    
                 <div class="form-control">
                     <div class="form-control-title">Сколько заказов клиенты делают в месяц</div>
-                    <input type="text" class="form-control__field" id="slider-span2" value="23">
+                    <span class="form-control__field" id="slider-span2">23</span>
                     <div class="calc-range" id="program-slider2"></div>                    
                 </div> 
                 <div class="form-control">
                     <div class="form-control-title">Средняя сумма заказа</div>
                     <div class="form-control-wrap">
-                        <input type="text" class="form-control__field form-control__field-last" id="slider-span3" value="350"> 
+                        <span class="form-control__field form-control__field-last" id="slider-span3">350</span>
                         <div>руб</div>
                     </div>                    
                     <div class="calc-range" id="program-slider3"></div>                    
@@ -274,8 +276,7 @@
                         <div class="form-control-total-text">Ваш заработок в месяц составит:</div>
                         <div class="form-control-total-money">3 970 руб</div>
                     </div>
-                </div> 
-                
+                </div>                
             </div>
         </div>
     </div>
@@ -290,8 +291,8 @@
                 </div>  
             </div>
             <div class="info">
-                <div class="title">Вывод средств</div> 
-                <div class="text">Мы позволяем выводить срадства через множество способов.<br>
+                <div class="withdrawal_title">Вывод средств</div> 
+                <div class="withdrawal_text">Мы позволяем выводить срадства через множество способов.<br>
                     Например:
                 </div>            
                 <div class="list">
@@ -315,8 +316,8 @@
 
     <div class="reviews">
         <div class="container">
-            <div class="title">Наши Довольные Клиенты</div>
-            <div class="text">Сервис SMMmedia предлагает высокопрофессиональные услуги раскрутки и продвижения<br> во всех популярных социальных сетях</div>
+            <div class="reviews_title">Наши Довольные Клиенты</div>
+            <div class="reviews_text">Сервис SMMmedia предлагает высокопрофессиональные услуги раскрутки и продвижения<br> во всех популярных социальных сетях</div>
             <div class="reviews_items reviews-slider">
                 <div class="reviews_item">
                     <div class="reviews_item-avatar">
@@ -403,7 +404,7 @@
 
     <div class="post">
         <div class="container">
-            <div class="title">Последние статьи</div>
+            <div class="post_title">Последние статьи</div>
             <div class="post_items post-slider">
                 <div class="post_item">
                     <div class="post_item-date">31 октября 2021</div>     
@@ -453,11 +454,9 @@
                         <span>Подробнее</span>
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
-
 
 
     <footer class="footer">
@@ -495,6 +494,7 @@
 
     
 </div>
+
 
 
 
@@ -625,10 +625,14 @@
 
 
 
-<script>
-    var sliderFormat = document.getElementById('program-slider1');
-    noUiSlider.create(sliderFormat, {
-        start: [0],
+<!-- <script>
+    function updateTotal(){
+        var number = 3970;
+        $(".form-control-total-money").text(number.toLocaleString('ru-RU') + " руб")
+    }
+    var sliderFormat1 = document.getElementById('program-slider1');
+    noUiSlider.create(sliderFormat1, {
+        start: [35],
         step: 1,
         connect: 'lower',
         range: {
@@ -639,19 +643,17 @@
             decimals: 0
         })
     });
-    var inputFormat = document.getElementById('slider-span1');
-    sliderFormat.noUiSlider.on('update', function (values, handle) {
-        inputFormat.value = values[handle];
-    });
-    inputFormat.addEventListener('change', function () {
-        sliderFormat.noUiSlider.set(this.value);
+    var inputFormat1 = document.getElementById('slider-span1');
+    sliderFormat1.noUiSlider.on('update', function (values, handle) {
+        inputFormat1.innerText = values[handle];
+        updateTotal();
     });
 </script>
 
 <script>
-    var sliderFormat = document.getElementById('program-slider2');
-    noUiSlider.create(sliderFormat, {
-        start: [0],
+    var sliderFormat2 = document.getElementById('program-slider2');
+    noUiSlider.create(sliderFormat2, {
+        start: [23],
         step: 1,
         connect: 'lower',
         range: {
@@ -662,18 +664,15 @@
             decimals: 0
         })
     });
-    var inputFormat = document.getElementById('slider-span2');
-    sliderFormat.noUiSlider.on('update', function (values, handle) {
-        inputFormat.value = values[handle];
-    });
-    inputFormat.addEventListener('change', function () {
-        sliderFormat.noUiSlider.set(this.value);
+    var inputFormat2 = document.getElementById('slider-span2');
+    sliderFormat2.noUiSlider.on('update', function (values, handle) {
+        inputFormat2.value = values[handle];
     });
 </script>
 
 <script>
-    var sliderFormat = document.getElementById('program-slider3');
-    noUiSlider.create(sliderFormat, {
+    var sliderFormat3 = document.getElementById('program-slider3');
+    noUiSlider.create(sliderFormat3, {
         start: [0],
         step: 1,
         connect: 'lower',
@@ -685,14 +684,11 @@
             decimals: 0
         })
     });
-    var inputFormat = document.getElementById('slider-span3');
-    sliderFormat.noUiSlider.on('update', function (values, handle) {
-        inputFormat.value = values[handle];
+    var inputFormat3 = document.getElementById('slider-span3');
+    sliderFormat3.noUiSlider.on('update', function (values, handle) {
+        inputFormat3.value = values[handle];
     });
-    inputFormat.addEventListener('change', function () {
-        sliderFormat.noUiSlider.set(this.value);
-    });
-</script>
+</script> -->
 
 </body>
 </html>

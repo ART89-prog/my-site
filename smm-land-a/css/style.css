@@ -1,4 +1,6 @@
 
+/* ABOUT START */
+
 .section--main:before {
     bottom: 27%;
 }
@@ -24,7 +26,11 @@
 .about_item {
     padding: 34px 8px 61px 41px;    
 }
-.title {
+.about_title,
+.program_title,
+.withdrawal_title,
+.reviews_title,
+.post_title {
     font-weight: bold;
     font-size: 42px;
     line-height: 48px;
@@ -32,7 +38,10 @@
     color: #000000;   
     margin-bottom: 29px;
 }
-.text {
+.about_text,
+.program_text,
+.withdrawal_text,
+.reviews_text {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -83,6 +92,11 @@
     background: #fff;
 }
 
+/* ABOUT END */
+
+
+
+/* PROGRAMM START */
 
 .program {
     padding: 79px 0 69px;
@@ -127,7 +141,7 @@
 .program_right .calc-range {
     height: 7px;
     margin: 10px 0;
-    background: #fff;
+    background: #E4E2F1;
     border-radius: 3px;
     border: none;
 }
@@ -146,7 +160,7 @@
     border-radius: 8px;
 }
 .program .form-control__field-last {
-    width: 15%;
+    width: 50px;
 }
 .program .form-control-wrap {
     display: flex;
@@ -200,7 +214,11 @@
     color: #FFFFFF;
 }
 
+/* PROGRAM END */
 
+
+
+/* WITHDRAWAL START */
 
 .withdrawal {
     padding: 60px 0 50px;
@@ -246,18 +264,20 @@
     margin-bottom: 0px;
 }
 
+/* WITHDRAWAL END */
 
 
 
+/* REVIEWS START */
 
 .reviews {
     padding: 78px 0 65px;
 }
-.reviews .title {
+.reviews_title {
     text-align: center;
     position: relative;
 }
-.reviews .title:before {
+.reviews_title:before {
     position: absolute;
     content: "";
     width: 135px;
@@ -267,7 +287,7 @@
     transform: translateX(-50%);
     background: url(../img/quote.png);
 }
-.reviews .text {
+.reviews_text {
     text-align: center;
     margin-bottom: 160px;
 }
@@ -282,6 +302,7 @@
     border-radius: 18px;
     padding: 25px 33px 46px;
     margin-right: 22px;
+    box-shadow: 0px 14px 43px rgba(212, 210, 224, 0.585337);
 }
 .reviews_items > * {
     margin-right: 0px;
@@ -355,13 +376,17 @@
 	background: linear-gradient(135deg, #3087FB 0%, #333DBD 100%);
 }
 
+/* REVIEWS END */
 
+
+
+/* POST START */
 
 .post {
     padding-top: 40px;
     padding-bottom: 93px;
 }
-.post .title {
+.post_title {
     text-align: center;
 }
 .post_items {
@@ -371,7 +396,7 @@
     background: #FFFFFF;
     border-radius: 18px;
     padding: 25px 69px 46px 33px;
-    margin-right: 22px;
+    box-shadow: 0px 14px 43px rgba(212, 210, 224, 0.585337);
 }
 .post_item-date {
     font-weight: 500;
@@ -407,6 +432,25 @@
     line-height: 50px;
     color: #FFFFFF;
 }
+.post_item-link:hover {
+    background: linear-gradient(176.59deg, #3087FB 0%, #333DBD 643.45%);
+}
+.slick-list {
+    overflow: initial;
+}  
+.slick-slide {
+    opacity: 0;
+    margin: 0 11px;
+}  
+.slick-active {
+    opacity: 1;
+}
+
+/* POST END */
+
+
+
+/* FOOTER START */
 
 .footer {
     background: #35146a;
@@ -490,11 +534,7 @@
     max-height: 20px;
 }
 
-
-
-
-
-
+/* FOOTER END */
 
 
 
@@ -541,7 +581,7 @@
         padding: 18px 0 18px;
     }
     .slick-dots button {
-        margin-top: 0;
+        margin-top: 60px;
     }
     .post {
         padding-top: 30px;
@@ -555,6 +595,9 @@
         align-items: center;
         justify-content: space-between;
     }
+    .slick-dots button {
+        margin-top: 45px;
+    }
 
 
 }
@@ -562,7 +605,10 @@
 
 
 @media (max-width: 767px) {
-    .reviews .text br {
+    .slick-dots button {
+        margin-top: 30px;
+    }
+    .reviews_text br {
         display: none;
     }
     .about_items-top {
@@ -603,8 +649,15 @@
         order: 1;
         margin-top: 38px;
     }
-    .title,
-    .text {
+    .about_title,
+    .program_title,
+    .withdrawal_title,
+    .reviews_title,
+    .post_title,
+    .about_text,
+    .program_text,
+    .withdrawal_text,
+    .reviews_text {
         text-align: center;
     }
     .program .btn {
@@ -622,14 +675,13 @@
         margin-top: 0px;
     }
     .post_item {
-        margin-right: 0px;
         padding: 25px;
     }
-    .reviews .title:before {
+    .reviews_title:before {
         top: -25px;
         z-index: -1;
     }
-    .reviews .text {
+    .reviews_text {
         margin-bottom: 0;
     }
     .program_right-banner {
@@ -644,7 +696,7 @@
     .program {
         padding: 45px 0 10px;
     }
-    .withdrawal .text br {
+    .withdrawal_text br {
         display: none;
     }
     .reviews_item {
@@ -661,13 +713,20 @@
     .withdrawal-image {
         width: 100%;
     }
-    .title {
+    .about_title,
+    .program_title,
+    .withdrawal_title,
+    .reviews_title,
+    .post_title {
         font-size: 26px;
         line-height: 30px;
         letter-spacing: -0.65px;
         margin-bottom: 19px;
     }
-    .text {
+    .about_text,
+    .program_text,
+    .withdrawal_text,
+    .reviews_text {
         font-size: 14px;
         line-height: 26px;
     }
@@ -705,3 +764,5 @@
     }
 
 }
+
+
