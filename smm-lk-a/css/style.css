@@ -322,5 +322,44 @@
     color: #F6D93E;
 }
 
-
 /* INCOME END */
+
+
+
+/* DIALOG START */
+
+.dialog .main-content__social {
+    justify-content: space-between;
+}
+.dialog .social-list__link {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3178EF;
+}
+.dialog .social-list__link span {
+    display: block;
+    margin-left: 6px;
+}
+.dialog_block-messages {
+    display: flex;
+    flex-direction: column;
+}
+.dialog_block-message {
+    margin-left: auto;
+    display: block;
+    background: #136EEC;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
+    padding: 7px 18px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.28px;
+    color: #FFFFFF;
+}
+
+
+/* DIALOG END */
