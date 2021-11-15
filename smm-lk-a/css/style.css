@@ -218,11 +218,10 @@
 }
 .replenishment_title {
     margin-bottom: 15px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: -0.45px;
-    color: #474141;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777777;
 }
 .replenishment_item {
     padding: 15px 0 15px 15px;
@@ -309,3 +308,19 @@
 }
 
 /* BALANCE END */
+
+
+/* INCOME START */
+
+.income .field-select label a {
+    color: #3173EA;
+}
+.replenishment_item-right-time {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+    color: #F6D93E;
+}
+
+
+/* INCOME END */
