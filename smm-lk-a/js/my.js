@@ -12,6 +12,57 @@ $(document).ready(function(){
     });
 
 
+// Удаление файла
+	$('.form .file .selected .remove').click(function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.file')
+
+		$(this).closest('div').remove()
+		parent.find('input[type=file]').val('')
+	})
+
+// Копирование ссылки
+    new ClipboardJS(".js-btn-clipboard").on("success", function(e) {
+
+    });
+
+    $('.js-copy-text').each(function(i, item) {
+        $(item).addClass('referrals_item-link-' + i);
+    });
+       
+    $(".js-btn-clipboard").click(function(e) {
+        var val = $(this).data("after-text");
+        $(this).text(val);
+        $(this).addClass("btn-success").removeClass("btn-red");
+    });
+
+
+
+    $(window).resize(() => {
+        // Моб. версия
+        if (!fiestResize) {
+            $('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
+            if ($(window).width() < 360) $('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
+    
+            fiestResize = true
+        } else {
+            fiestResize = false
+        }
+    })
+
+
+    	// Моб. версия
+	fiestResize = false
+
+	if ($(window).width() < 360) {
+		$('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
+
+		fiestResize = true
+	}
+    
+
+
 // niceSelect
     $('select').niceSelect();
 

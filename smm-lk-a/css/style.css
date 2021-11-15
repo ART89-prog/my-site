@@ -333,7 +333,7 @@
 }
 .dialog .social-list__link {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -349,7 +349,10 @@
 }
 .dialog_block-message {
     margin-left: auto;
-    display: block;
+    margin-bottom: 38px;     
+}
+.dialog_block-text {
+    display: inline-block;
     background: #136EEC;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
     border-radius: 13px;
@@ -360,6 +363,286 @@
     letter-spacing: 0.28px;
     color: #FFFFFF;
 }
+.dialog .main-content .icon {
+    width: 17px;
+    height: 9px;
+}
+.dialog_block-date {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    color: #455A8A;
+    margin-top: 6px;
+}
+.dialog_block-message.my .dialog_block-text {
+    background: #DCE7FF;
+    color: #313873;
+}
+.dialog_block-message.my .dialog_block-date {
+    margin-left: auto;
+    text-align: end;
+}
+.mra {
+    margin-right: auto;
+    margin-left: 0;
+}
+.dialog .add_message .line {
+    position: relative;
+    margin-bottom: 28px;
+}
+.dialog .add_message textarea {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 31px rgba(148, 155, 195, 0.360122);
+    border-radius: 6px; 
+    padding: 20px 18px;
+    width: 100%;
+    height: 55px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #B2B6BF;
+}
+.dialog .add_message button {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.dialog .add_message button .icon {
+    width: 23px;
+    height: 22px;   
+}
+
+.add_message .form .file .field .btn_close {
+    background: #E35479;
+    border-radius: 20.5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 148px;
+    height: 41px;
+}
+.add_message .form .file label {
+    width: 175px;
+    flex-wrap: nowrap;
+}
+.add_message .form .file .file_btn {
+    height: 41px;
+    line-height: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.add_message .form .file .selected {
+    margin-left: 10px;
+}
+.add_message .form .file .selected {
+    margin-left: 10px;
+}
+.add_message .file-chooser__input {
+    display: none;
+}
+
+
 
 
 /* DIALOG END */
+
+
+
+
+/* REFERRALS START */
+
+.referrals_items {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #DDDDDD;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.referrals_item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.referrals_item-info {
+    width: calc(100% - 226px);
+}
+.referrals_item-info a {
+    text-decoration: none;
+    padding: 20px 21px;
+    background: linear-gradient(180deg, #F4F2FA 0%, #F0EEF9 100%);
+    border-radius: 7px;
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #484848;    
+}
+.referrals_item-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;   
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.referrals_item-title .icon {
+    width: 22px;
+    height: 16px;
+    margin-left: 8px;
+}
+.referrals .clipboard-btn .btn {
+    width: 196px;
+    height: 65px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.referrals_information-head {
+    display: flex;
+    margin-bottom: 5px;
+}
+.referrals_information-body {
+    display: flex;
+    padding: 15px 15px 15px 0;
+    background: linear-gradient(270deg, #FFFFFF 0%, #F0EEF9 100%);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.referrals_information {
+    padding-top: 23px;
+}
+.referrals_information-head p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777777;   
+}
+.referrals_information-body p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #9390AB; 
+    white-space: nowrap;  
+}
+.referrals_information-head p:nth-child(1),
+.referrals_information-body p:nth-child(1) {
+    width: 20%;
+}
+.referrals_information-head p:nth-child(2),
+.referrals_information-body p:nth-child(2) {
+    width: 20%;
+}
+.referrals_information-head p:nth-child(3),
+.referrals_information-body p:nth-child(3) {
+    width: 20%;
+}
+.referrals_information-head p:nth-child(4),
+.referrals_information-body p:nth-child(4) {
+    width: 20%;
+}
+.referrals_information-body p:nth-child(1) {
+    padding-left: 15px;
+}
+
+@media (max-width: 1053px) {
+    .referrals_information-head p:nth-child(1),
+    .referrals_information-body p:nth-child(1) {
+        width: 25%;
+    }
+    .referrals_information-head p:nth-child(2),
+    .referrals_information-body p:nth-child(2) {
+        width: 25%;
+    }
+    .referrals_information-head p:nth-child(3),
+    .referrals_information-body p:nth-child(3) {
+        width: 25%;
+    }
+    .referrals_information-head p:nth-child(4),
+    .referrals_information-body p:nth-child(4) {
+        width: 25%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .referrals_item {
+        flex-direction: column;
+    }
+    .referrals .clipboard-btn .btn {
+        width: 100%;
+    }
+    .referrals_item-info {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .clipboard-btn {
+        width: 100%;
+    }
+    .referrals_information-head {
+        display: none;
+    }
+    .referrals_information-mob {
+        display: block !important;
+        margin-bottom: 15px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #777777;
+    }
+    .referrals_information-body p:nth-child(1) {
+        width: 100%;
+    }
+    .referrals_information-body p:nth-child(2) {
+        width: 34%;
+    }
+    .referrals_information-body p:nth-child(3) {
+        width: 40%;
+    }
+    .referrals_information-body p:nth-child(4) {
+        width: 40%;
+    }
+    .referrals_information-body p:nth-child(1) {
+        padding-left: 0px;
+    }
+    .referrals_information-body {
+        padding: 15px;
+    }
+    .referrals_item:last-child {
+        margin-bottom: 3px;
+    }
+    
+}
+
+@media (max-width: 479px) {
+    .referrals_information-body .sep-mob {
+        display: block !important;
+        padding: 0 6px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 27px;
+        color: #9390AB;
+    }
+    .referrals_information-body p:nth-child(4) {
+        display: none;
+    }
+    .referrals_information-body p:last-child {
+        display: block !important;
+        width: 100%;
+    }
+    
+
+}
+
+
+/* REFERRALS END */
