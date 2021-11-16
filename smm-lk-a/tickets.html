@@ -126,9 +126,8 @@
                                         <svg class="icon"><use xlink:href="#icon-arrows"></use></svg>
                                         <span>Вернуться к FAQ</span> 
                                     </a>
-                                    <a href="" class="btn btn-primary btn-full-mob" style="display: none;">Открыть&nbsp;Новый</a>
-                                </div>
-                                
+                                    <a  data-fancybox="" href="#modal_tickets" class="btn btn-primary" style="display: none;">Открыть&nbsp;Новый</a>
+                                </div>                               
                             </div>
 
                             <div class="tickets_information">
@@ -279,6 +278,20 @@
 
 <div style="display: none; width: 320px;" id="modal2">
 	<img src="img/modal_photo.jpg" alt="">
+</div>
+
+<div class="modal_tickets" style="display: none;" id="modal_tickets">
+	<div class="modal_tickets-title">Создание тикета</div>
+    <form class="modal_tickets-form">
+        <div class="line">
+            <label for="message">Тема</label>
+            <input id="message" type="text" placeholder="Почему не выводятся средства. Верните деньги">
+        </div>
+        <div class="line">
+            <label for="message2">Сообщение</label>
+            <textarea id="message2" placeholder="Ваше сообщение"></textarea>
+        </div>
+    </form>
 </div>
 
 </body>
