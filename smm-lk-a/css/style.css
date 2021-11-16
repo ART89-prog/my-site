@@ -875,6 +875,42 @@
     }
 }
 
-
-
 /* REQUSITES END */
+
+
+/* SUPPORT START */
+
+.support_items {
+}
+.support_item {
+}
+.support_item-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.45px;
+    color: #242424; 
+    margin-bottom: 14px;
+}
+.support_item-list {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #9390AB;
+    margin-bottom: 18px;
+}
+.support_item-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #9390AB;
+}
+.support_item-text a,
+.support_item-list a {
+    color: #136EEC;
+}
+    
+
+
+
+/* SUPPORT END */
