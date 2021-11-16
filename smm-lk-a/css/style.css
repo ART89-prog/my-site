@@ -745,5 +745,108 @@
     }
 }
 
-
 /* PROMOCODE END */
+
+
+/* REQUSITES START */
+
+.requsites .social-list__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3178EF;
+}
+.requsites .main-content .icon {
+    width: 17px;
+    height: 9px;
+}
+.requsites .main-content__social {
+    justify-content: space-between;
+}
+.requsites .social-list__link span {
+    display: block;
+    margin-left: 6px;
+}
+.requsites_form-line {
+    margin-bottom: 24px;
+    position: relative;
+}
+.requsites_form-line-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 37px;
+}
+.requsites_form-line label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 10px;
+    display: block;
+}
+.requsites_form-line input {
+    padding: 20px 30px 20px 70px;
+    background: #FFFFFF;
+    border: 1px solid #CBCAD3;
+    border-radius: 7px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #484848;
+    opacity: 0.54;
+}
+.requsites_form-bottom {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.requsites_form-bottom-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 13px;
+}
+.requsites_form-icon {
+    position: absolute;
+    left: 19px;
+    top: 50%;
+}
+.requsites_form-bottom-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+    color: #199A21;
+}
+
+@media (max-width: 990px) {
+    .requsites .main-content--lk .main-content__form .main-content__head {
+        display: block;
+        margin-bottom: 0;
+    }
+    .requsites .social-list__title {
+        display: none;
+    }
+    .requsites .main-content__head {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .requsites_form-line-bottom {
+        flex-direction: column;
+    }
+    .requsites_form-bottom {
+        margin-right: 0;
+        order: 1;
+        margin-top: 24px;
+    }
+    .requsites .btn-primary {
+        width: 100%;
+    }
+}
+
+
+
+/* REQUSITES END */
