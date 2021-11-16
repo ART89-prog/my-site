@@ -1279,6 +1279,13 @@ footer .container {
   width: 216px;
   height: 128px;
 }
+#callback_modal4 .modal_catalog-left-item {
+  width: 100%;
+  height: auto;
+}
+.modal_catalog-left-item img {
+  border-radius: 6px;
+}
 .modal_catalog-left-item img {
   width: 100%;
   height: 100%;
