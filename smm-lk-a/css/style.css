@@ -178,11 +178,11 @@
     justify-content: space-between;
     padding-bottom: 36px;
     border-bottom: 1px solid #DDDDDD;
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .balance_form .field {
     margin-right: 30px;
@@ -412,7 +412,6 @@
     width: 23px;
     height: 22px;   
 }
-
 .add_message .form .file .field .btn_close {
     background: #E35479;
     border-radius: 20.5px;
@@ -447,9 +446,6 @@
     display: none;
 }
 
-
-
-
 /* DIALOG END */
 
 
@@ -460,11 +456,11 @@
 .referrals_items {
     padding-bottom: 18px;
     border-bottom: 1px solid #DDDDDD;
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .referrals_item {
     display: flex;
@@ -644,5 +640,110 @@
 
 }
 
-
 /* REFERRALS END */
+
+
+/* PROMOCODE START */
+
+.promocode_item {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #DDDDDD;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.promocode_item-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+.promocode_item-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.promocode_item-input {
+    width: calc(100% - 252px);
+    background: #FFFFFF;
+    border: 1px solid #CBCAD3;
+    border-radius: 7.05341px;
+    padding: 20px 22px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #484848;
+    opacity: 0.54;
+}
+.promocode_item .btn {
+    width: 222px;
+    height: 65px;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.promocode_item-bottom {
+    display: flex;
+    align-items: center;
+}
+.promocode_item .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+}
+.promocode_item-bottom-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+    color: #199A21;
+}
+.reception {
+    padding-top: 17px;
+    padding-bottom: 26px;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.reception_title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.4px;
+    color: #242424;
+    margin-bottom: 14px;
+}
+.reception_list {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9390AB; 
+}
+.reception_list li a {
+    color: #136EEC;
+}
+
+@media (max-width: 767px) {
+    .promocode_item-form {
+        flex-direction: column;
+    }
+    .promocode_item-input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .promocode_item .btn {
+        width: 100%;
+    }
+}
+
+
+/* PROMOCODE END */
