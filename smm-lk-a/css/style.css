@@ -1154,6 +1154,79 @@
     color: #B3B3B3;
 }
 
-
-
 /* TICKETS END */
+
+
+
+/* SETTINGS START */
+
+.settings_form {
+}
+.settings_form .columns > * {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.settings_form .line {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    margin-left: -15                        px;
+}
+.settings_form .line > * {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+}
+.settings_form .label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+.settings_form input {
+    background: #FFFFFF;
+    border: 1px solid #CBCAD3;
+    border-radius: 7px;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #484848;
+    padding: 20px;
+}
+.settings_form input[type="email"] {
+    background: linear-gradient(180deg, #F4F2FA 0%, #F0EEF9 100%);    
+}
+.password-control {
+}
+.password-control2 {
+}
+
+
+.settings_form-line-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 37px;
+}
+.settings_form-bottom {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.settings_form-bottom-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 13px;
+}
+.settings_form-bottom-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 27px;
+    color: #199A21;
+}
+
+
+/* SETTINGS END */
