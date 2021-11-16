@@ -909,8 +909,199 @@
 .support_item-list a {
     color: #136EEC;
 }
-    
-
-
 
 /* SUPPORT END */
+
+
+
+/* TICKETS START */
+
+.tickets .social-list__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3178EF;
+}
+.tickets .main-content .icon {
+    width: 17px;
+    height: 9px;
+}
+.tickets .social-list__link span {
+    display: block;
+    margin-left: 6px;
+}
+.tickets .main-content__social {
+    justify-content: space-between;
+}
+.tickets_information-head {
+    display: flex;    
+    justify-content: space-between;
+    padding: 12px;
+}
+.tickets_information-body {
+    display: flex;
+    padding: 12px;
+    background: linear-gradient(270deg, #FFFFFF 0%, #F0EEF9 100%);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 56px;
+    align-items: center;
+}
+.tickets_information {
+    padding-top: 23px;
+}
+.tickets_information-head p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777777;   
+}
+.tickets_information-body p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #9390AB;  
+}
+.tickets_information-head p:nth-child(1),
+.tickets_information-body p:nth-child(1) {
+    width: 20%;
+}
+.tickets_information-head p:nth-child(2),
+.tickets_information-body p:nth-child(2) {
+    width: 32%;
+}
+.tickets_information-head p:nth-child(3),
+.tickets_information-body p:nth-child(3) {
+    width: 22%;
+}
+.tickets_information-head p:nth-child(4),
+.tickets_information-body p:nth-child(4) {
+    width: 25%;
+    text-align: end;
+}
+.tickets_information-head p:nth-child(1) {
+    margin-left: -12px;
+}
+.tickets_information-body p:nth-child(4) {
+    color: #199A21;
+    font-weight: bold;
+}
+.tickets_information-body:nth-child(4) p:nth-child(4) {
+    color: #C93B42;
+    font-weight: bold;
+}
+.tickets_information-date-counter,
+.tickets_information-name-counter {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 1px 7px;
+    background: #00A131;
+    border-radius: 50%;
+    margin-left: 9px;
+}
+.tickets_information-body p:nth-child(3) {
+    white-space: nowrap;
+}
+
+@media (max-width: 1053px) {
+    .tickets_information-head p:nth-child(1),
+    .tickets_information-body p:nth-child(1) {
+        width: 25%;
+    }
+    .tickets_information-head p:nth-child(2),
+    .tickets_information-body p:nth-child(2) {
+        width: 25%;
+    }
+    .tickets_information-head p:nth-child(3),
+    .tickets_information-body p:nth-child(3) {
+        width: 25%;
+    }
+    .tickets_information-head p:nth-child(4),
+    .tickets_information-body p:nth-child(4) {
+        width: 25%;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .main-content--lk .main-content__form .main-content__head {
+        display: block;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+    .tickets_information {
+        padding-top: 0;
+    }
+    .tickets .social-list__title {
+        display: none;
+    }    
+}
+
+
+@media (max-width: 767px) {
+
+    .tickets_information-body p:nth-child(1) {
+        width: 14%;
+    }
+    .tickets_information-body p:nth-child(2) {
+        width: 43%;
+    }
+    .tickets_information-body p:nth-child(3) {
+        width: 18%;
+    }
+    .tickets_information-body p:nth-child(4) {
+        width: 21%;
+    }
+    .tickets_information-body p:nth-child(1) {
+        padding-left: 0px;
+    }
+    .tickets_information-head {
+        display: none;
+    }
+        
+}
+
+@media (max-width: 550px) {
+
+    .tickets_information-body p:nth-child(1),
+    .tickets_information-body p:nth-child(2),
+    .tickets_information-body p:nth-child(3),
+    .tickets_information-body p:nth-child(4) {
+        width: 100%;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .tickets_information-body p:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    .tickets_information-body p:nth-child(3) {
+        order: -1;
+        display: flex;
+        align-items: center;
+    }
+    .tickets_information-date-counter {
+        display: block !important;
+    }
+    .tickets_information-name-counter {
+        display: none;
+    }
+    .tickets .social-list__link {
+        margin-bottom: 22px;
+    }
+    .tickets .main-content__head .btn {
+        display: block !important;
+       
+    }
+    
+
+}
+
+
+
+/* TICKETS END */
