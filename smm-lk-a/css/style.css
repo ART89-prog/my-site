@@ -124,6 +124,10 @@
     .history_item-top-right {
         margin-top: 15px;
     }
+    .history_item-top-right .icon {
+        order: -1;
+        margin-right: 9px;
+    }
     .history_item-top-right {
         display: none;
     }
@@ -212,7 +216,7 @@
     line-height: 24px;
     color: #484848;
     opacity: 0.54;
-    padding: 0 22px;
+    padding: 0 17px;
 }
 .replenishment {
     padding-top: 22px;
