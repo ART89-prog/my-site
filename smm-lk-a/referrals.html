@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/tippy.css">
     <link rel="stylesheet" href="css/light.css">
     <link rel="stylesheet" href="css/scale.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,6 +25,7 @@
     <script src="js/tippy-bundle.umd.js"></script>
     <script src="js/wNumb.min.js"></script>
     <script src="js/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/my.js"></script>
 
 <title>SMM MEDIA</title>
@@ -129,7 +131,7 @@
                                         <div class="referrals_item-title">
                                             <span>Ваша реферальная ссылка для приглашения</span> 
                                         </div>    
-                                        <a href="#" class="referrals_item-link-0 js-copy-text">https://smm.media/ref/skadsFGasdAFAdlF</a>
+                                        <div class="referrals_item-link referrals_item-link-0 js-copy-text">https://smm.media/ref/skadsFGasdAFAdlF</div>
                                     </div>
                                     <div class="clipboard-btn">
                                         <button class="btn btn-red js-btn-clipboard btn-primary" data-after-text="Ссылка скопирована" data-clipboard-target=".referrals_item-link-0">Скопировать ссылку</button>
@@ -139,9 +141,11 @@
                                     <div class="referrals_item-info">
                                         <div class="referrals_item-title">
                                             <span>Реферальный баннер (темный фон)</span> 
-                                            <svg class="icon icon-gradient"><use xlink:href="#icon-eye"></use></svg>
+                                            <a data-fancybox href="#modal1">
+                                                <svg class="icon icon-gradient"><use xlink:href="#icon-eye"></use></svg>    
+                                            </a>   
                                         </div>    
-                                        <a href="#" class="referrals_item-link-1 js-copy-text">https://smm.media/ref/skadsFGasdAFAdlF2</a>
+                                        <div class="referrals_item-link referrals_item-link-1 js-copy-text">https://smm.media/ref/skadsFGasdAFAdlF2</div>
                                     </div>
                                     <div class="clipboard-btn">
                                         <button class="btn btn-red js-btn-clipboard btn-primary" data-after-text="Ссылка скопирована" data-clipboard-target=".referrals_item-link-1">Скопировать ссылку</button>
@@ -150,10 +154,12 @@
                                 <div class="referrals_item">
                                     <div class="referrals_item-info">
                                         <div class="referrals_item-title">
-                                            <span>Реферальный баннер (светлый фон)</span> 
-                                            <svg class="icon icon-gradient"><use xlink:href="#icon-eye"></use></svg>
+                                            <span>Реферальный баннер (светлый фон)</span>
+                                            <a data-fancybox href="#modal2">
+                                                <svg class="icon icon-gradient"><use xlink:href="#icon-eye"></use></svg>    
+                                            </a>                                            
                                         </div>    
-                                        <a href="#" class="referrals_item-link-2 js-copy-text">https://smm.media/ref/skadsFGasdAFAdlF3</a>
+                                        <div class="referrals_item-link referrals_item-link-2 js-copy-text">https://smm.media/ref/skadsFGasdAFAdlF3</div>
                                     </div>
                                     <div class="clipboard-btn">
                                         <button class="btn btn-red js-btn-clipboard btn-primary" data-after-text="Ссылка скопирована" data-clipboard-target=".referrals_item-link-2">Скопировать ссылку</button>
@@ -308,6 +314,15 @@
 
     </defs>
 </svg>
+
+
+<div style="display: none; width: 320px;" id="modal1">
+	<img src="img/modal_photo.jpg" alt="">
+</div>
+
+<div style="display: none; width: 320px;" id="modal2">
+	<img src="img/modal_photo.jpg" alt="">
+</div>
 
 </body>
 </html>

@@ -484,9 +484,8 @@
 .referrals_item-info {
     width: calc(100% - 226px);
 }
-.referrals_item-info a {
-    text-decoration: none;
-    padding: 20px 21px;
+.referrals_item-link {
+    padding: 20px 21px 21px;
     background: linear-gradient(180deg, #F4F2FA 0%, #F0EEF9 100%);
     border-radius: 7px;
     display: block;
@@ -562,6 +561,9 @@
 .referrals_information-body p:nth-child(1) {
     padding-left: 15px;
 }
+.fancybox__content {
+    padding: 0;
+}
 
 @media (max-width: 1053px) {
     .referrals_information-head p:nth-child(1),
@@ -610,16 +612,16 @@
         color: #777777;
     }
     .referrals_information-body p:nth-child(1) {
-        width: 100%;
+        width: auto;
     }
     .referrals_information-body p:nth-child(2) {
-        width: 34%;
+        width: auto;
     }
     .referrals_information-body p:nth-child(3) {
-        width: 40%;
+        width: auto;
     }
     .referrals_information-body p:nth-child(4) {
-        width: 40%;
+        width: auto;
     }
     .referrals_information-body p:nth-child(1) {
         padding-left: 0px;
@@ -629,6 +631,9 @@
     }
     .referrals_item:last-child {
         margin-bottom: 3px;
+    }
+    .referrals_information-body {
+        justify-content: space-between;
     }
     
 }
@@ -642,11 +647,17 @@
         line-height: 27px;
         color: #9390AB;
     }
-    .referrals_information-body p:nth-child(4) {
+    .referrals_information-body p:nth-child(5) {
         display: none;
     }
     .referrals_information-body p:last-child {
         display: block !important;
+        width: 100%;
+    }
+    .referrals_information-body {
+        justify-content: start;
+    }
+    .referrals_information-body p:nth-child(1) {
         width: 100%;
     }
     

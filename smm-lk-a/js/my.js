@@ -34,7 +34,6 @@ $(document).ready(function(){
     $(".js-btn-clipboard").click(function(e) {
         var val = $(this).data("after-text");
         $(this).text(val);
-        $(this).addClass("btn-success").removeClass("btn-red");
     });
 
 
