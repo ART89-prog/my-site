@@ -195,7 +195,6 @@
     margin-right: 30px;
 }
 .balance_form .field-select {
-    max-width: 474px;
     width: 100%;
     margin-right: 30px;
 }
@@ -382,6 +381,7 @@
     line-height: 24px;
     letter-spacing: 0.28px;
     color: #FFFFFF;
+    position: relative;
 }
 .dialog .main-content .icon {
     width: 17px;
@@ -397,6 +397,25 @@
 .dialog_block-message.my .dialog_block-text {
     background: #DCE7FF;
     color: #313873;
+    position: relative;
+}
+.dialog_block-message.my .dialog_block-text::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    bottom: -2px;
+    left: 2px;
+    background: url(../img/mess.png);
+}
+.dialog_block-message .dialog_block-text::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 9px;
+    bottom: -3px;
+    right: 0px;
+    background: url(../img/mess-blau.png);
 }
 .dialog_block-message.my .dialog_block-date {
     margin-left: auto;
@@ -422,7 +441,7 @@
     line-height: 14px;
     color: #B2B6BF;
 }
-.dialog .add_message button {
+.dialog .add_message .form .line button {
     position: absolute;
     right: 18px;
     top: 50%;
@@ -432,7 +451,12 @@
     width: 23px;
     height: 22px;   
 }
-.add_message .form .file .field .btn_close {
+.add_message-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.add_message .form .btn_close {
     background: #E35479;
     border-radius: 20.5px;
     font-weight: 500;
@@ -447,7 +471,7 @@
     width: 175px;
     flex-wrap: nowrap;
 }
-.add_message .form .file .file_btn {
+.add_message .form .file_btn {
     height: 41px;
     line-height: 0;
     cursor: pointer;
@@ -456,15 +480,74 @@
     text-align: center;
     color: #FFFFFF;
 }
-.add_message .form .file .selected {
-    margin-left: 10px;
-}
-.add_message .form .file .selected {
-    margin-left: 10px;
-}
-.add_message .file-chooser__input {
+.dialog .add_message .hidden-inputs {
     display: none;
 }
+.dialog .add_message .file-chooser__input {
+    display: none;
+}
+.dialog .file .file-list {
+    display: flex;
+    align-items: center;
+}
+.dialog .file .file-list li {
+    display: flex;
+}
+.dialog .file .file-list .file-list__name {
+    margin-right: 5px;
+}
+.dialog .file .field.file-chooser {
+    display: flex;
+    align-items: center;
+}
+.dialog .file .file-uploader__message-area {
+    margin-left: 10px;
+}
+
+@media (max-width: 990px) {
+    .dialog .social-list__title {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        text-align: start;
+        margin-bottom: 0;
+    }  
+}
+
+@media (max-width: 767px) {
+    .dialog .social-list__title {
+        flex-direction: column;
+    } 
+    .dialog .social-list__link {
+        margin-top: 9px;
+    } 
+    .add_message-bottom {
+        flex-direction: column;
+    }
+    .add_message .form .btn_close {
+        width: 100%;
+        order: 1;
+        margin-top: 17px;
+    }
+    .add_message .file.file-uploader {
+        width: 100%;
+    }
+    .add_message .form .file label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .dialog .file .field.file-chooser {
+        flex-direction: column;
+    }
+    .dialog_block-message {
+        margin-bottom: 17px;
+    }
+    .dialog .add_message textarea {
+        height: 43px;
+        padding: 14px 18px 14px 43px;
+    }
+}
+
 
 /* DIALOG END */
 
