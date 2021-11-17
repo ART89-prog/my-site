@@ -1094,6 +1094,19 @@
 .tickets_information-body p:nth-child(3) {
     white-space: nowrap;
 }
+.tickets_information-link {
+    margin-top: 135px;
+    margin-left: auto;
+    display: block;
+    width: 171px;
+}
+.modal_tickets-btn {
+    width: 171px;
+    padding: 24.5px 20px;
+    display: block;
+    margin-top: 24px;
+    margin-left: auto;
+}
 
 @media (max-width: 1053px) {
     .tickets_information-head p:nth-child(1),
@@ -1155,6 +1168,9 @@
     .tickets .social-list__link {
         margin-bottom: 22px;
     }
+    .tickets_information-link {
+        display: none;
+    }
 }
 
 @media (max-width: 550px) {
@@ -1180,7 +1196,12 @@
     }
     .tickets_information-name-counter {
         display: none;
-    }    
+    }  
+    .modal_tickets-btn {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }  
 }
 
 .modal_tickets {
