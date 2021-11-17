@@ -1,6 +1,9 @@
 
 /* HISTORY START */
 
+.btn-primary {
+    font-size: 14px;
+}
 .main-content__head {
     width: calc(100% + 40px);
     margin-left: -20px;
@@ -1157,21 +1160,13 @@
 /* TICKETS END */
 
 
-
 /* SETTINGS START */
 
-.settings_form {
-}
-.settings_form .columns > * {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .settings_form .line {
-    width: 100%;
     margin-bottom: 24px;
     display: flex;
-    margin-left: -15                        px;
+    margin-left: -30px;
+    flex-wrap: wrap;
 }
 .settings_form .line > * {
     width: calc(50% - 30px);
@@ -1199,12 +1194,12 @@
 .settings_form input[type="email"] {
     background: linear-gradient(180deg, #F4F2FA 0%, #F0EEF9 100%);    
 }
-.password-control {
+.settings_avatar {
+    margin-bottom: 25px;
 }
-.password-control2 {
+.settings .main-content--lk .main-content__form .main-content__head {
+    display: none;
 }
-
-
 .settings_form-line-bottom {
     display: flex;
     align-items: center;
@@ -1227,6 +1222,99 @@
     line-height: 27px;
     color: #199A21;
 }
+.settings_avatar .hidden-inputs {
+    display: none;
+}
+.settings_avatar .file-chooser__input {
+    display: none;
+}
+.settings_avatar-wrapper {
+    display: flex;
+}
+.settings_avatar-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+.settings_avatar-photo {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    margin-right: 26px;
+}
+.settings_avatar-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
+    object-fit: cover;
+}
+.settings_avatar-photo .icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+.settings .file_btn {
+    background: linear-gradient(135deg, #3087FB 0%, #333DBD 100%);
+    border-radius: 20.5px;
+    width: 175px;
+    height: 41px;
+    display: block;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 41px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.settings_key {
+}
+.settings_key-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+.settings_key-item {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #484848;
+    padding: 20px 22px;
+    background: linear-gradient(180deg, #F4F2FA 0%, #F0EEF9 100%);
+    border-radius: 7.05341px;
+}
+
+@media (max-width: 767px) {
+    .settings_form .line {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .settings_form .line > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 22px;
+    }
+    .settings_form-line-bottom {
+        flex-direction: column;
+    }
+    .settings_form-bottom {
+        margin-right: 0px;
+        order: 1;
+        margin-top: 24px;
+    }
+    .settings_form .line {
+        margin-bottom: 0;
+    }
+}
+
+
+
 
 
 /* SETTINGS END */

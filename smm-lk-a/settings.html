@@ -24,6 +24,8 @@
     <script src="js/tippy-bundle.umd.js"></script>
     <script src="js/wNumb.min.js"></script>
     <script src="js/file.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/my.js"></script>
 
 <title>SMM MEDIA</title>
@@ -150,6 +152,29 @@
                                     </div>
                                 </form>
 
+                                <div class="settings_avatar">
+                                    <div class="settings_avatar-title">Аватар</div>
+                                    <div class="settings_avatar-wrapper">
+                                        <div class="settings_avatar-photo">
+                                            <img src="img/avatar-photo.png" alt="">
+                                            <svg class="icon"><use xlink:href="#icon-delete"></use></svg>
+                                        </div>
+                                        <div class="file file-uploader">
+											<div class="field file-chooser">
+												<input class="file-chooser__input" name="file[]" type="file" id="file">
+												<label for="file" class="file_btn btn">
+													<span>Выбрать Аватар</span>
+												</label>												
+												<div class="selected list file-uploader__message-area"></div>
+											</div>
+										</div>
+                                    </div>
+                                </div>
+
+                                <div class="settings_key">
+                                    <div class="settings_key-text">API ключ (никому не сообщайте и не передавайте данный ключ</div>
+                                    <div class="settings_key-item">098709s8dflkjsdf09809s8df;klj;lsijdkl;jfs0f9</div>
+                                </div>
 
                                 <div class="settings_form-line-bottom">
                                     <div class="settings_form-bottom">
@@ -258,7 +283,12 @@
             <stop offset="1" stop-color="#0052D4"/>
             </linearGradient>
             </defs>
+        </symbol>        
+        <symbol id="icon-delete" width="21" height="21" viewBox="0 0 21 21">
+            <circle cx="10.8052" cy="10.9592" r="10" fill="#EE2F2F"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.18101 7.5C9.3099 6.65536 10.0778 6 11 6C11.9222 6 12.6901 6.65536 12.819 7.5H15.6001C15.7423 7.49809 15.8746 7.56914 15.9462 7.68595C16.0179 7.80276 16.0179 7.94724 15.9462 8.06405C15.8746 8.18086 15.7423 8.25191 15.6001 8.25H15.0384L14.3761 14.7573C14.3039 15.4656 13.6849 16 12.9366 16H9.06344C8.31508 16 7.69589 15.4656 7.62386 14.7573L6.96157 8.25H6.39991C6.25771 8.25191 6.12545 8.18086 6.05376 8.06405C5.98208 7.94724 5.98208 7.80276 6.05376 7.68595C6.12545 7.56914 6.25771 7.49809 6.39991 7.5H9.18101ZM12.015 7.5C11.8992 7.06704 11.494 6.75 11 6.75C10.506 6.75 10.1008 7.06704 9.985 7.5H12.015ZM9.81712 9.5C10.0348 9.5 10.2114 9.66775 10.2114 9.875V13.625C10.2114 13.8323 10.0348 14 9.81712 14C9.59947 14 9.42283 13.8323 9.42283 13.625V9.875C9.42283 9.66775 9.59947 9.5 9.81712 9.5ZM12.5772 9.875C12.5772 9.66775 12.4005 9.5 12.1829 9.5C11.9652 9.5 11.7886 9.66775 11.7886 9.875V13.625C11.7886 13.8323 11.9652 14 12.1829 14C12.4005 14 12.5772 13.8323 12.5772 13.625V9.875Z" fill="white"/>
         </symbol>
+    
         
 
         <linearGradient id="gradientPrimary" x2="0%" y2="100%">
