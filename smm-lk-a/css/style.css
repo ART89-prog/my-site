@@ -8,11 +8,31 @@
     font-size: 14px;
 }
 form label {
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+form label span {
+    display: block;
+}
+form label .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 form label.error {
     color: #F73B3B;
+}
+.text-error {
+    align-items: center;
+    display: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F73B3B;
+}
+form label.error .text-error {
+    color: #F73B3B;
+    display: flex;
 }
 
 
