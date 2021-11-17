@@ -375,6 +375,36 @@ form label.error .text-error {
     line-height: 27px;
     color: #F6D93E;
 }
+.income_modal {
+    max-width: 516px;
+    width: 100%;
+    padding: 62px 66px 61px;
+    text-align: center;
+}
+.income_modal .icon {
+    width: 146px;
+    height: 146px;
+    margin-bottom: 37px;
+}
+.income_modal-title {
+    margin-bottom: 19px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.6px;
+    color: #242424;
+}
+.income_modal-text {
+    margin-bottom: 37px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #777777;
+}
+.income_modal .btn-primary {
+    padding: 24.5px 34px;
+}
 
 @media (max-width: 990px) {
     .income .main-content__form .main-content__head {
@@ -1501,8 +1531,134 @@ form label.error .text-error {
     }
 }
 
-
-
-
-
 /* SETTINGS END */
+
+
+
+/* ENTRY START */
+
+.entry {
+    background: url(../img/bg.png) no-repeat top center;
+    background-size: cover;
+    width: 100%;    
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;  
+}
+.entry_wrapper {
+    max-width: 422px;
+    width: 100%;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 88px rgba(86, 44, 147, 0.292282);
+    border-radius: 24px;
+    padding: 34px 32px 26px;
+    text-align: center;
+}
+.entry_title {
+    margin: 30px auto 20px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: -0.625px;
+    color: #474141;
+}
+.entry .form .line-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.entry .form .field {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.entry .form .field label {
+    margin-bottom: 10px;
+    font-family: "Ubuntu";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+}
+.entry .form .field input {
+    background: #FFFFFF;
+    border: 1px solid #CBCAD3;
+    border-radius: 7px; 
+    padding: 20px 22px;
+    font-family: "Ubuntu";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #484848;
+}
+.entry .form .password-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    right: 16px;
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    background: url(../img/svg/view.svg) 0 0 no-repeat;
+}
+.entry .form .checkbox {
+    text-align: start;
+    margin-bottom: 0;
+}
+.entry .form .recovery_link {
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3175EC;  
+}
+.entry .captcha {
+    margin-bottom: 20px;
+}
+.entry .form .btn-primary {
+    width: 100%;
+    padding: 24.5px 20px;
+}
+.entry_registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3175EC;
+}
+.entry_registration a {
+    display: block;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3175EC;
+    display: block;
+    margin-left: 5px;
+}
+.entry .logo img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 400px) {
+    .entry_wrapper {
+        padding: 34px 16px 26px;
+    }
+}
+
+
+/* ENTRY END */
