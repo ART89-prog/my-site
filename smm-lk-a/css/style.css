@@ -1,9 +1,30 @@
+.main-content .main-content__head {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.main-content--lk .main-content__form .main-content__head {
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.main-content--lk .main-content__form .main-content__head .main-content__social {
+    padding-right: 0;
+    padding-left: 0;
+}
+.social-list {
+    padding-right: 0;
+}
+
 .disabled {
     background: linear-gradient(180deg, #F4F2FA 0%, #F0EEF9 100%) !important;
     border-radius: 7px !important;
     border: none !important;
 }
-
 .btn-primary {
     font-size: 14px;
 }
@@ -39,7 +60,7 @@ form label.error .text-error {
 
 /* HISTORY START */
 
-.main-content__head {
+.history .main-content__head {
     width: calc(100% + 40px);
     margin-left: -20px;
     margin-right: -20px;
@@ -214,6 +235,11 @@ form label.error .text-error {
 
 /* BALANCE START */
 
+.balance .main-content__head {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+}
 .balance_form .line {
     display: flex;
     align-items: flex-end;
@@ -287,8 +313,6 @@ form label.error .text-error {
 .replenishment .sep {
     padding: 0 12px;
 }
-.replenishment_item-date {
-}
 .replenishment_item-right {
     display: flex;
     align-items: center;
@@ -318,7 +342,7 @@ form label.error .text-error {
 }
 
 @media (max-width: 990px) { 
-    .balance .main-content--lk .main-content__form .main-content__head {
+    .balance .main-content__form .main-content__head {
         display: none;
     }
 }
@@ -366,6 +390,11 @@ form label.error .text-error {
 
 /* INCOME START */
 
+.income .main-content__head {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+}
 .income .field-select label a {
     color: #3173EA;
 }
@@ -415,12 +444,12 @@ form label.error .text-error {
     .income .social-list__title {
         display: none;
     }  
+    .income .main-content__head {
+        padding: 0;
+    }
 }
 
-
-
 /* INCOME END */
-
 
 
 /* DIALOG START */
@@ -534,6 +563,9 @@ form label.error .text-error {
     align-items: flex-start;
     justify-content: space-between;
 }
+.form .add_message-bottom label span {
+    margin: 0 auto;
+}
 .add_message .form .btn_close {
     background: #E35479;
     border-radius: 20.5px;
@@ -626,12 +658,24 @@ form label.error .text-error {
         height: 43px;
         padding: 14px 18px 14px 43px;
     }
+    .add_message-avatar {
+        display: block !important;
+        width: 31px;
+        height: 31px;
+        position: absolute;
+        top: 50%;
+        left: 7px;
+        transform: translateY(-50%);
+    }
+    .add_message-avatar img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
 
-
 /* DIALOG END */
-
-
 
 
 /* REFERRALS START */
@@ -672,6 +716,9 @@ form label.error .text-error {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+}
+.referrals_item-title a {
+    display: flex;
 }
 .referrals_item-title .icon {
     width: 22px;
@@ -761,7 +808,6 @@ form label.error .text-error {
     }    
 }
 
-
 @media (max-width: 767px) {
 
     .referrals_item {
@@ -811,8 +857,7 @@ form label.error .text-error {
     }
     .referrals_information-body {
         justify-content: space-between;
-    }
-    
+    }    
 }
 
 @media (max-width: 479px) {
@@ -837,8 +882,6 @@ form label.error .text-error {
     .referrals_information-body p:nth-child(1) {
         width: 100%;
     }
-    
-
 }
 
 /* REFERRALS END */
@@ -1028,7 +1071,7 @@ form label.error .text-error {
 }
 
 @media (max-width: 990px) {
-    .requsites .main-content--lk .main-content__form .main-content__head {
+    .requsites .main-content__form .main-content__head {
         display: block;
         margin-bottom: 0;
     }
@@ -1086,14 +1129,12 @@ form label.error .text-error {
 }
 
 @media (max-width: 990px) {
-    .support .main-content--lk .main-content__form .main-content__head {
+    .support .main-content__form .main-content__head {
         display: none;
     }
 }
 
-
 /* SUPPORT END */
-
 
 
 /* TICKETS START */
@@ -1497,9 +1538,8 @@ form label.error .text-error {
     color: #777777;
 }
 
-
 @media (max-width: 990px) {
-    .settings .main-content--lk .main-content__form .main-content__head {
+    .settings .main-content__form .main-content__head {
         display: none;
     }
     .settings .social-list__title {
@@ -1660,9 +1700,7 @@ form label.error .text-error {
     }
 }
 
-
 /* ENTRY END */
-
 
 
 /* REGISTRATION START */
@@ -1671,5 +1709,93 @@ form label.error .text-error {
     line-height: 19px;
     padding-top: 0px;
 }
+.registration .checkbox a {
+    color: #3175EC;
+}
 
 /* REGISTRATION END */
+
+
+/* MODAL_PASSWORD START */
+
+.modal_password {
+    max-width: 422px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 88px rgba(86, 44, 147, 0.292282);
+    border-radius: 24px;
+    margin: 0 auto;
+    padding: 24px 32px 30px;
+}
+.modal_password-title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.625px;
+    color: #474141;
+    margin-bottom: 21px;
+}
+.modal_password .form .field {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.modal_password .form .field label {
+    margin-bottom: 10px;
+    font-family: "Ubuntu";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+}
+.modal_password .form .field input {
+    background: #FFFFFF;
+    border: 1px solid #CBCAD3;
+    border-radius: 7px; 
+    padding: 20px 22px;
+    font-family: "Ubuntu";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #484848;
+}
+.modal_password .form .password-control3,
+.modal_password .form .password-control4,
+.modal_password .form .password-control5 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    right: 16px;
+    display: inline-block;
+    width: 22px;
+    height: 16px;
+    background: url(../img/svg/view.svg) 0 0 no-repeat;
+}
+.modal_password-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #777777;
+}
+.modal_password-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #777777;
+    margin-bottom: 20px;
+}
+.modal_password-text a {
+    color: #3178EF;  
+    display: inline; 
+}
+.modal_password .btn-primary {
+    width: 100%;
+}
+.modal_registration a.modal_password-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3175EC;
+}
+
+/* MODAL_PASSWORD END */

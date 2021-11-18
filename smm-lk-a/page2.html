@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/light.css">
     <link rel="stylesheet" href="css/scale.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
@@ -375,6 +376,63 @@
 
     </defs>
 </svg>
+
+
+<div class="modal_registration modal_password" style="display: block;" id="modal_registration">
+	<div class="modal_password-title">Вы уже<br> зарегистрированы</div>
+    <form class="form modal_password-form">
+        <div class="line">
+            <div class="field">
+                <label for="password-input5">
+                    <span>Введите свой пароль</span>
+                    <a class="modal_password-link" href="#">Забыл пароль</a>
+                </label>
+                <input type="password" id="password-input5" placeholder="********************">
+                <a href="#" class="password-control5"></a>
+            </div>
+        </div>
+        <div class="modal_password-text">Продолжая, я соглашаюсь с <a href="#">политикой<br> конфедециальности</a> и <a href="#">правилами пользования<br> сервисом</a></div>
+        <button type="submit" class="btn btn-primary">
+            <span>Запустить Накрутку</span> 
+        </button> 
+    </form>
+</div>
+
+<div class="modal_password" style="display: block;" id="modal_password">
+	<div class="modal_password-title">Создайте свой пароль для<br> входа в ЛК</div>
+    <form class="form modal_password-form">
+        <div class="line">
+            <div class="field">
+                <label for="password-input4">
+                    <span>Введите желаемый пароль</span> 
+                    <div class="text-error">
+                        <svg class="icon"><use xlink:href="#icon-error"></use></svg>
+                        <span>Ошибка. Какой то текст</span> 
+                    </div>
+                </label>
+                <input type="password" id="password-input4" placeholder="********************">
+                <a href="#" class="password-control4"></a>
+            </div>
+        </div>
+        <div class="line">
+            <div class="field">
+                <label for="password-input3">
+                    <span>Повторите пароль</span> 
+                    <div class="text-error">
+                        <svg class="icon"><use xlink:href="#icon-error"></use></svg>
+                        <span>Ошибка. Какой то текст</span> 
+                    </div>
+                </label>
+                <input type="password" id="password-input3" placeholder="********************">
+                <a href="#" class="password-control3"></a>
+            </div>
+        </div>
+        <div class="modal_password-text">Продолжая, я соглашаюсь с <a href="#">политикой<br> конфедециальности</a> и <a href="#">правилами пользования<br> сервисом</a></div>
+        <button type="submit" class="btn btn-primary">
+            <span>Запустить Накрутку</span> 
+        </button> 
+    </form>
+</div>
 
 </body>
 </html>
