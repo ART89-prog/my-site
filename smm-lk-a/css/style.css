@@ -1662,3 +1662,15 @@ form label.error .text-error {
 
 
 /* ENTRY END */
+
+
+
+/* REGISTRATION START */
+
+.registration .checkbox {
+    line-height: 19px;
+    padding-top: 0px;
+}
+
+
+/* REGISTRATION END */
