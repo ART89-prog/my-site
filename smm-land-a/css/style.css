@@ -297,6 +297,7 @@
 .reviews_items {
     padding: 18px 0 27px;
 }
+
 .reviews_item {
     background: #FFFFFF;
     border-radius: 18px;
@@ -343,6 +344,13 @@
     line-height: 18px;
     letter-spacing: -0.4px;
     color: #B2B2B2; 
+}
+
+.reviews_item-stars{
+    display: flex;
+}
+.reviews_item-stars img{
+    margin-left:3px;
 }
 .reviews .icon {
     width: 88px;
@@ -646,8 +654,9 @@
     }
     .program_left {
         margin-right: 0;
-        order: 1;
-        margin-top: 38px;
+        order: -1;
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
     .about_title,
     .program_title,
@@ -764,7 +773,6 @@
     }
 
 }
-
 
 
 
