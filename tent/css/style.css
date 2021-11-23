@@ -1091,9 +1091,10 @@ header .container {
   line-height: 22px;
   font-weight: 400;
   color: #6f7278;
-  max-width: 550px;
+  max-width: 750px;
   width: 100%;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  text-align: center;
 }
 .questions_form .modal_politic a {
   font-size: 16px;
