@@ -279,6 +279,7 @@
     .questions {
         margin-top: 40px;
         padding: 21px 0 30px;
+        background-position: center 0px;
     }
     .questions_form-wrap {
         flex-direction: column;
@@ -292,9 +293,9 @@
         margin-left: 0px;
         margin-bottom: 8px;
     }
-    .questions {
-        background-position: center 0px;
-    }
+    .questions_form .modal_politic {
+        max-width: 100%;
+      }
     .questions_btn {
         margin-right: 0px;
         margin: 19px auto 0;
