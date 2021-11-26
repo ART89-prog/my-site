@@ -692,6 +692,19 @@ header .container {
 .selection_form .line {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+}
+.selection_form .modal_politic {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6f7278;
+}
+.selection_form .modal_politic a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6f7278;
 }
 .selection_form .field {
   margin-right: 12px;
@@ -991,8 +1004,6 @@ header .container {
   background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 15%,rgba(255,255,255,0) 100%);
   z-index: -1;
 }
-
-
 .questions_image {
   position: absolute;
   width: 749px;
@@ -1074,6 +1085,22 @@ header .container {
   margin-left: auto;
   margin-right: 45px;
   margin-top: 35px;
+}
+.questions_form .modal_politic {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6f7278;
+  max-width: 750px;
+  width: 100%;
+  margin: 20px auto 0;
+  text-align: center;
+}
+.questions_form .modal_politic a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6f7278;
 }
 
 
@@ -1278,6 +1305,9 @@ footer .container {
 .modal_catalog-left-item {
   width: 216px;
   height: 128px;
+}
+.modal_catalog-left-item img {
+  border-radius: 6px;
 }
 .modal_catalog-left-item img {
   width: 100%;

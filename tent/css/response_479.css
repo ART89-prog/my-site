@@ -272,8 +272,9 @@
         width: 83px;
         height: 83px;
     }
-    .reviews_item-photo img {
-        outline-offset: 5px;
+    .reviews_item-photo img,
+    .application_item-img img {
+        outline: none;
     }
     .reviews_item-info_text {
         display: none;

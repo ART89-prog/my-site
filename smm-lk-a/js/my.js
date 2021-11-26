@@ -34,9 +34,54 @@ $(document).ready(function(){
     $(".js-btn-clipboard").click(function(e) {
         var val = $(this).data("after-text");
         $(this).text(val);
-        $(this).addClass("btn-success").removeClass("btn-red");
     });
 
+
+
+    	// Пароль
+	$('body').on('click', '.password-control', function () {
+		if ($('#password-input').attr('type') == 'password') {
+			$(this).addClass('view');
+			$('#password-input').attr('type', 'text');
+		} else {
+			$(this).removeClass('view');
+			$('#password-input').attr('type', 'password');
+		}
+		return false;
+	});
+
+    $('body').on('click', '.password-control4', function () {
+		if ($('#password-input4').attr('type') == 'password') {
+			$(this).addClass('view');
+			$('#password-input4').attr('type', 'text');
+		} else {
+			$(this).removeClass('view');
+			$('#password-input4').attr('type', 'password');
+		}
+		return false;
+	});
+
+    $('body').on('click', '.password-control3', function () {
+		if ($('#password-input3').attr('type') == 'password') {
+			$(this).addClass('view');
+			$('#password-input3').attr('type', 'text');
+		} else {
+			$(this).removeClass('view');
+			$('#password-input3').attr('type', 'password');
+		}
+		return false;
+	});
+
+    $('body').on('click', '.password-control5', function () {
+		if ($('#password-input5').attr('type') == 'password') {
+			$(this).addClass('view');
+			$('#password-input5').attr('type', 'text');
+		} else {
+			$(this).removeClass('view');
+			$('#password-input5').attr('type', 'password');
+		}
+		return false;
+	});
 
 
     $(window).resize(() => {
@@ -60,6 +105,19 @@ $(document).ready(function(){
 
 		fiestResize = true
 	}
+
+
+
+	$('body').on('click', '.password-control2', function () {
+		if ($('#password-input2').attr('type') == 'password') {
+			$(this).addClass('view');
+			$('#password-input2').attr('type', 'text');
+		} else {
+			$(this).removeClass('view');
+			$('#password-input2').attr('type', 'password');
+		}
+		return false;
+	});
     
 
 

@@ -42,7 +42,7 @@
                 $('.file-chooser').append($('.file-chooser__input').clone({ withDataAndEvents: true }));
 
                 //add the name and a remove button to the file-list
-                $('.file-list').append('<li style="display: none;"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 22" id="ic_file"><path d="M9 6v10.399c0 1.67-1.129 3.19-2.765 3.525A3.506 3.506 0 0 1 2 16.5V4.113c0-.996.678-1.922 1.661-2.085A2.003 2.003 0 0 1 6 4v10.5a.5.5 0 0 1-1 0V6a1 1 0 0 0-2 0v8.353c0 1.308.939 2.502 2.24 2.634A2.503 2.503 0 0 0 8 14.5V4.178C8 2.09 6.477.222 4.399.02A4.004 4.004 0 0 0 0 4v12.255c0 2.871 2.093 5.439 4.949 5.718A5.506 5.506 0 0 0 11 16.5V6a1 1 0 0 0-2 0z"></path></svg><div class="file-list__name name">' + fileName + '</div><button class="removal-button remove" data-uploadid="' + uploadId + '">удалить</button></li>');
+                $('.file-list').append('<li style="display: none;"><div class="file-list__name name">' + fileName + '</div><button class="removal-button remove" data-uploadid="' + uploadId + '"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 6C0 2.682 2.682 0 6 0C9.318 0 12 2.682 12 6C12 9.318 9.318 12 6 12C2.682 12 0 9.318 0 6ZM8.8242 8.8242C9.0588 8.5896 9.0588 8.2104 8.8242 7.9758L6.8484 6L8.8242 4.0242C9.0588 3.7896 9.0588 3.4104 8.8242 3.1758C8.5896 2.9412 8.2104 2.9412 7.9758 3.1758L6 5.1516L4.0242 3.1758C3.7896 2.9412 3.4104 2.9412 3.1758 3.1758C2.9412 3.4104 2.9412 3.7896 3.1758 4.0242L5.1516 6L3.1758 7.9758C2.9412 8.2104 2.9412 8.5896 3.1758 8.8242C3.2928 8.9412 3.4464 9 3.6 9C3.7536 9 3.9072 8.9412 4.0242 8.8242L6 6.8484L7.9758 8.8242C8.0928 8.9412 8.2464 9 8.4 9C8.5536 9 8.7072 8.9412 8.8242 8.8242Z" fill="#E32424"/></svg></button></li>');
                
                 $('.file-list').find("li:last").show();
 
@@ -107,6 +107,6 @@
 //init 
 $(document).ready(function() {
     $('.fileUploader').uploader({
-        MessageAreaText: "Файлы не выбраны."
+        MessageAreaText: "Файл не выбран"
     });
 });
