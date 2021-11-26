@@ -73,7 +73,7 @@ $(document).ready(function(){
     }
     $('.nice-select .option').click(function () {
         var newClass = $(this).allTheClasses();
-        $(this).parents('.nice-select').find('.current').attr('class', 'current ' + newClass);
+        $(this).parents('.nice-select').find('.current').attr('class', 'current ' + newClass.join(' '));
     });
 
 
