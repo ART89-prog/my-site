@@ -346,7 +346,14 @@
 .dialog_block-messages {
     display: flex;
     flex-direction: column;
+    max-height: 400px;
+    overflow: auto;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    min-height: 200px;
 }
+
+.dialog_block-messages
 .dialog_block-message {
     margin-left: auto;
     margin-bottom: 38px;     
