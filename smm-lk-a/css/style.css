@@ -501,7 +501,14 @@ form label.error .text-error {
 .dialog_block-messages {
     display: flex;
     flex-direction: column;
+    max-height: 400px;
+    overflow: auto;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    min-height: 200px;
 }
+
+.dialog_block-messages
 .dialog_block-message {
     margin-left: auto;
     margin-bottom: 38px;     
@@ -1551,6 +1558,13 @@ form label.error .text-error {
     padding: 20px 22px;
     background: linear-gradient(180deg, #F4F2FA 0%, #F0EEF9 100%);
     border-radius: 7.05341px;
+    width: calc(100% - 180px);
+}
+.settings_key-item-flex{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
 }
 .settings .file-list li {
     display: flex;
@@ -1565,6 +1579,10 @@ form label.error .text-error {
     font-size: 14px;
     line-height: 24px;
     color: #777777;
+}
+
+.settings_key-item-flex .clipboard-btn .btn{
+    height: 64px;
 }
 
 @media (max-width: 990px) {
@@ -1597,6 +1615,18 @@ form label.error .text-error {
     }
     .settings_form .line {
         margin-bottom: 0;
+    }
+    .settings_key-item
+    {
+        width: 100%;
+        margin-bottom: 12px;
+    }    
+    .settings_key-item-flex{
+        flex-direction: column;
+    }
+
+    .settings_key-item-flex .clipboard-btn .btn{
+        width: 100%;
     }
 }
 

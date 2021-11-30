@@ -3244,4 +3244,30 @@ textarea:focus:-ms-input-placeholder {
         display: block;
     }
 }
-/*# sourceMappingURL=main.min.css.map */
+
+
+.nice-select .list{
+    overflow: auto;
+    max-height: 150px;
+}
+
+
+.nice-select.open .list {
+    overflow: auto;
+}
+.nice-select.open .list::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 3px;
+}
+.nice-select.open .list {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.nice-select.open .list::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+.nice-select.open .list::-webkit-scrollbar-thumb {
+    background: var(--thumbBG-gr);
+    border-radius: 0;
+    border: none;
+}
