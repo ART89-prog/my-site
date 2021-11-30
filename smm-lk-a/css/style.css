@@ -303,6 +303,44 @@ form label.error .text-error {
 .balance .btn-primary {
     padding: 24.5px 27px;
 }
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 39px;
+    margin-bottom: 22px;
+}
+.pagination > * + * {
+    margin-left: 10px;
+}
+.pagination .pagination-link {
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #3087FB 0%, #333DBD 100%);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: all .7s;
+}
+.pagination .pagination-link.active {
+    color: #3253CF;
+    background: linear-gradient(270deg, #F4F3FB 0%, #F0EEF9 100%);
+}
+.pagination .pagination-link:hover {
+    color: #3253CF;
+    background: linear-gradient(270deg, #F4F3FB 0%, #F0EEF9 100%);
+}
+.pagination .sep {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3253CF;
+}
 
 .replenishment {
     padding-top: 22px;
@@ -1762,6 +1800,42 @@ form label.error .text-error {
 /* ENTRY END */
 
 
+/* PAGE-ERROR START */
+
+.page-error {
+    padding: 115px 50px 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-error_img {
+    margin: 0 auto 30px;
+}
+.page-error_title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;    
+    color: #131212;
+    margin-bottom: 13px;
+}
+.page-error_text {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    color: #777777; 
+    margin-bottom: 29px;   
+}
+.page-error .btn-primary {
+    padding: 17px 14px;
+}
+
+
+/* PAGE-ERROR END */
+
+
+
 /* REGISTRATION START */
 
 .registration .checkbox {
@@ -1771,6 +1845,7 @@ form label.error .text-error {
 .registration .checkbox a {
     color: #3175EC;
 }
+
 
 /* REGISTRATION END */
 
