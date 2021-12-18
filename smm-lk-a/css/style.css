@@ -1972,6 +1972,7 @@ form label.error .text-error {
     height: 15px;
 }
 
+
 @media (max-width: 990px) {
     .lk-password {
         display: none;
@@ -2007,5 +2008,7 @@ form label.error .text-error {
     .lk-password_mob .lk-password_text span {
         color: #3178EF;
     }
+   
+    
 
 }

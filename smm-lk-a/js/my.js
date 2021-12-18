@@ -41,15 +41,26 @@ $(document).ready(function(){
         }
     }
 
-    setTimeout(function() { 
-        $.fancybox.close(true)
 
-        $.fancybox.open({
-            src: "#change_pass",
-            type: 'inline',
-            touch: false
-        })
+
+
+    setTimeout(function() { 
+        if ( $(window).width() < 990 ) {
+
+            // $.fancybox.close(true)
+
+            $.fancybox.open({
+                src: "#change_pass",
+                type: 'inline',
+                touch: false
+            })
+        }
+        else {
+            $.fancybox.close(true)
+        }
     }, 1000);
+
+    
 
 
 // Удаление файла
