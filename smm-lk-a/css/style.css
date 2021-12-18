@@ -1977,18 +1977,19 @@ form label.error .text-error {
         display: none;
     }
     .lk-password_mob {
-        display: flex !important; 
-    }
-    .lk-password_mob {
         margin-top: 20px;
         padding: 12px 57px 28px 18px;
         background: #E6E2F7;
         border-radius: 15px;
-        display: flex; 
+        display: flex !important; 
         justify-content: space-between;
         align-items: flex-end;
-        position: relative;
+        top: 58px;
+        left: 0;
+        right: 0;
         width: 327px;
+        position: absolute;
+        margin: 0 auto;
     }
     .lk-password_mob .lk-password_icon {
         flex-shrink: 0;
