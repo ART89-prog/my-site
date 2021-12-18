@@ -12,6 +12,46 @@ $(document).ready(function(){
     });
 
 
+    $('.lk-password_close').click(function(){
+		$('.lk-password').slideToggle(50);      
+		return false;
+	});
+
+    // Fancybox
+    $.fancybox.defaults.hash = false
+    $.fancybox.defaults.backFocus = false
+    $.fancybox.defaults.autoFocus = false
+    $.fancybox.defaults.animationEffect = 'zoom'
+    $.fancybox.defaults.transitionEffect = 'slide'
+    $.fancybox.defaults.speed = 500
+    $.fancybox.defaults.gutter = 40
+    $.fancybox.defaults.i18n = {
+        'en': {
+            CLOSE: "Закрыть",
+            NEXT: "Следующий",
+            PREV: "Предыдущий",
+            ERROR: "Запрошенный контент не может быть загружен.<br /> Пожалуйста, повторите попытку позже.",
+            PLAY_START: "Запустить слайдшоу",
+            PLAY_STOP: "Остановить слайдшоу",
+            FULL_SCREEN: "На весь экран",
+            THUMBS: "Миниатюры",
+            DOWNLOAD: "Скачать",
+            SHARE: "Поделиться",
+            ZOOM: "Увеличить"
+        }
+    }
+
+    setTimeout(function() { 
+        $.fancybox.close(true)
+
+        $.fancybox.open({
+            src: "#change_pass",
+            type: 'inline',
+            touch: false
+        })
+    }, 1000);
+
+
 // Удаление файла
 	$('.form .file .selected .remove').click(function (e) {
 		e.preventDefault()
