@@ -102,6 +102,13 @@ $(document).ready(function(){
             })
     }
 
+    if ($('.documentation').length) {
+        inView('.documentation-image')
+            .on('enter', el => {
+                $(el).addClass('animate__animated animate__fadeInRight')
+            })
+    }
+
 
     // Range-slider на главной
 
@@ -170,6 +177,29 @@ $(document).ready(function(){
         inputFormat3.innerText = values[handle];
         updateTotal();
     });
+
+
+    $(window).resize(() => {
+        // Моб. версия
+        if (!fiestResize) {
+            $('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=1, maximum-scale=1')
+            if ($(window).width() < 360) $('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
+    
+            fiestResize = true
+        } else {
+            fiestResize = false
+        }
+    })
+
+    
+    	// Моб. версия
+	fiestResize = false
+
+	if ($(window).width() < 360) {
+		$('meta[name=viewport]').attr('content', 'width=360, user-scalable=no')
+
+		fiestResize = true
+	}
 
 
 

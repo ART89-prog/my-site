@@ -30,7 +30,8 @@
 .program_title,
 .withdrawal_title,
 .reviews_title,
-.post_title {
+.post_title,
+.documentation_title {
     font-weight: bold;
     font-size: 42px;
     line-height: 48px;
@@ -41,7 +42,8 @@
 .about_text,
 .program_text,
 .withdrawal_text,
-.reviews_text {
+.reviews_text,
+.documentation_text {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -266,6 +268,58 @@
 
 /* WITHDRAWAL END */
 
+
+/* DOCUMENTATION START */
+
+.documentation {
+    padding: 75px 0 75px;
+    background: #FAFAFA;
+}
+.documentation .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.documentation .info {
+    width: 580px;
+}
+.documentation-image {
+    width: 646px;
+}
+.documentation_links {
+    display: flex;
+    align-items: center;
+}
+.documentation_links-left {
+    width: 177px;
+    height: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: 0.5s;
+    border-radius: 36px;
+    margin-right: 20px;
+    background: linear-gradient(135deg, #307bf1 0, #3349c7 50%, #307bf1 100%);
+}
+.documentation_links-left:hover {
+    background-position: right center;
+}
+.documentation_links-right {
+    width: 156px;
+    height: 49px;
+    transition: 0.5s;
+    border-radius: 36px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 49px;
+    border: 2px solid #3178EF;
+    text-align: center;
+    color: #3178EF;
+}
+
+/* DOCUMENTATION END */
 
 
 /* REVIEWS START */
@@ -606,6 +660,11 @@
     .slick-dots button {
         margin-top: 45px;
     }
+    .documentation .info {
+        width: 403px;
+        margin-right: 20px;
+    }
+
 
 
 }
@@ -666,7 +725,8 @@
     .about_text,
     .program_text,
     .withdrawal_text,
-    .reviews_text {
+    .reviews_text,
+    .documentation_title {
         text-align: center;
     }
     .program .btn {
@@ -712,6 +772,26 @@
         margin-right: 0;
         padding: 25px;
     }
+    .documentation .container {
+        flex-direction: column-reverse;
+    }
+    .documentation .info {
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 39px;
+    }
+    .documentation_text {
+        text-align: center;
+    }
+    .documentation_links {
+        justify-content: center;
+    }
+    .documentation-image {
+        width: 100%;
+    }
+    .documentation {
+        padding: 50px 0 50px;
+    }
 
 
 }
@@ -726,7 +806,8 @@
     .program_title,
     .withdrawal_title,
     .reviews_title,
-    .post_title {
+    .post_title,
+    .documentation_title {
         font-size: 26px;
         line-height: 30px;
         letter-spacing: -0.65px;
@@ -735,7 +816,8 @@
     .about_text,
     .program_text,
     .withdrawal_text,
-    .reviews_text {
+    .reviews_text,
+    .documentation_text {
         font-size: 14px;
         line-height: 26px;
     }
