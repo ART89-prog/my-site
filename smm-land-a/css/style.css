@@ -783,6 +783,7 @@
     font-size: 25px;
     letter-spacing: -0.625px;
     color: #FFFFFF;
+    position: relative;
 }
 .comment-list_info {
     display: flex;
@@ -885,9 +886,34 @@ form label {
     color: #777777;  
     margin-bottom: 9px;
 }
+.comment-list_message.children .comment-list_text {
+    background: #E9EBF4;
+}
+.comment-list_message.children .comment-list_avatar {
+    position: relative;
+}
+.comment-list_message.children .comment-list_avatar.active:before {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 40px;
+    background: url(../img/arrow.svg);
+    top: -20px;
+    left: -53px;
+}
+.comment-link.like .icon {
+    fill: #AEAEAE;
+}
+.comment-link.dislike .icon {
+    fill: #AEAEAE;
+}
+.comment-link.like .icon.active {
+    fill: #314AD3;
+}
+
 
 @media (max-width: 650px) {
-    .comment {
+    .post {
         padding: 20px;
     }
     form .line:last-child {
@@ -901,6 +927,9 @@ form label {
 }
 
 @media (max-width: 479px) {
+    .category_block .post {
+        padding-top: 30px;
+    }
     .comment_bottom {
         flex-direction: column;
         align-items: flex-start;
@@ -918,7 +947,7 @@ form label {
     .comment-list_message.children {
         margin-left: 60px;
     }
-    .comment_title {
+    .post_title {
         font-size: 27px;
         line-height: 32px;
         margin-bottom: 15px;
@@ -934,7 +963,7 @@ form label {
     .comment-list_text {
         padding: 15px;
     }
-    .comment_text p {
+    .post_text p {
         font-size: 15px;
         line-height: 19px;
         margin-bottom: 15px;
@@ -944,6 +973,13 @@ form label {
     }
     .comment-list_links {
         margin-top: 17px;
+    }
+    .comment-list_message.children .comment-list_avatar.active:before {
+        display: none;
+    }
+    .comment_bottom-info {
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
