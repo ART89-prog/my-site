@@ -870,11 +870,40 @@
     margin-left: auto;
     margin-top: 17px;
 }
+form .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+form .line .field {
+    width: 100%;
+}
+form .line:last-child {
+    margin-bottom: 30px;
+}
+form textarea {
+    background: #FFFFFF;
+    border: 0.881676px solid #CBCAD3;
+    border-radius: 7px;
+    padding: 19px;
+    min-height: 111px;
+    height: 100%;
+    margin-bottom: 12px;
+}
 
 @media (max-width: 650px) {
     .comment {
         padding: 20px;
     }
+    form .line:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form_captcha {
+        margin-bottom: 15px;
+    }
+
 }
 
 @media (max-width: 479px) {
