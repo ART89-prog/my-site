@@ -713,6 +713,9 @@
     color: #777777;   
     margin-bottom: 20px;
 }
+.comment_form{
+    display: none;
+}
 .comment_bottom {
     display: flex;
     align-items: center;
@@ -840,8 +843,12 @@
 .comment-list_message {
     margin-bottom: 30px;
 }
+.comment{
+    margin-bottom: 30px;
+}
 .comment-list_message.children {
     margin-left: 105px;    
+    display: none;
 }
 .children .comment-list_left {
     display: inline-block;
@@ -858,19 +865,19 @@
     width: 100%;
     margin-left: auto;
 }
-form .line {
+form.comment_form .line {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-form .line .field {
+form.comment_form .line .field {
     width: 100%;
 }
-form .line:last-child {
+form.comment_form .line:last-child {
     margin-bottom: 30px;
 }
-form textarea {
+form.comment_form textarea {
     background: #FFFFFF;
     border: 0.881676px solid #CBCAD3;
     border-radius: 7px;
@@ -879,12 +886,13 @@ form textarea {
     height: 100%;
     margin-bottom: 12px;
 }
-form label {
+form.comment_form label {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: #777777;  
     margin-bottom: 9px;
+    display: block;
 }
 .comment-list_message.children .comment-list_text {
     background: #E9EBF4;
@@ -892,7 +900,7 @@ form label {
 .comment-list_message.children .comment-list_avatar {
     position: relative;
 }
-.comment-list_message.children .comment-list_avatar.active:before {
+.comment-list_message:not(.children) + .comment-list_message.children .comment-list_avatar:before {
     position: absolute;
     content: "";
     width: 46px;
@@ -907,7 +915,7 @@ form label {
 .comment-link.dislike .icon {
     fill: #AEAEAE;
 }
-.comment-link.like .icon.active {
+.comment-link .icon.active {
     fill: #314AD3;
 }
 
@@ -916,7 +924,7 @@ form label {
     .post {
         padding: 20px;
     }
-    form .line:last-child {
+    form.comment_form .line:last-child {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -974,7 +982,7 @@ form label {
     .comment-list_links {
         margin-top: 17px;
     }
-    .comment-list_message.children .comment-list_avatar.active:before {
+    .comment-list_message:not(.children) + .comment-list_message.children .comment-list_avatar:before {
         display: none;
     }
     .comment_bottom-info {
