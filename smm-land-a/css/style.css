@@ -691,21 +691,22 @@
 
 /* COMMENT START */
 
-.comment {
+.post {
     background: #FFFFFF;
     box-shadow: 0px 18px 88px rgba(86, 44, 147, 0.292282);
     border-radius: 24px;
     padding: 40px 40px 52px;  
 }
-.comment_title {
+.category_block .post_title {
     font-weight: bold;
     font-size: 36px;
     line-height: 41px;
     letter-spacing: -0.9px;
     color: #000000;
     margin-bottom: 29px;
+    text-align: start;
 }
-.comment_text p {
+.post_text p {
     font-weight: normal;
     font-size: 17px;
     line-height: 21px;
@@ -819,7 +820,6 @@
     font-size: 16px;
     line-height: 23px;
     color: #474747;
-    flex-wrap: wrap;
 }
 .show-button,
 .hide-button {
@@ -839,18 +839,6 @@
 .comment-list_message {
     margin-bottom: 30px;
 }
-.comment-list_message:nth-child(5n+1) .comment-list_avatar {
-    background: #5AC128;
-}
-.comment-list_message:nth-child(5n+2) .comment-list_avatar {
-    background: #FF3D29;
-}
-.comment-list_message:nth-child(5n+3) .comment-list_avatar {
-    background: #4654D8;
-}
-.comment-list_message:nth-child(5n+4) .comment-list_avatar {
-    background: #3E67A9;
-}
 .comment-list_message.children {
     margin-left: 105px;    
 }
@@ -868,7 +856,6 @@
     display: flex;
     width: 100%;
     margin-left: auto;
-    margin-top: 17px;
 }
 form .line {
     display: flex;
@@ -890,6 +877,13 @@ form textarea {
     min-height: 111px;
     height: 100%;
     margin-bottom: 12px;
+}
+form label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;  
+    margin-bottom: 9px;
 }
 
 @media (max-width: 650px) {
@@ -944,6 +938,12 @@ form textarea {
         font-size: 15px;
         line-height: 19px;
         margin-bottom: 15px;
+    }
+    .comment-list_link {
+        flex-wrap: wrap;
+    }
+    .comment-list_links {
+        margin-top: 17px;
     }
 }
 
