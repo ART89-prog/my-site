@@ -749,6 +749,7 @@
     line-height: 21px;
     color: #474747;  
     margin-right: 23px;
+    white-space: nowrap;
 }
 .comment-list_head {
     margin-bottom: 20px;
@@ -799,6 +800,7 @@
     font-size: 12px;
     line-height: 14px;
     color: #4D4F60;
+    white-space: nowrap;
 }
 .comment-list_text {
     padding: 18px 26px 18px;
@@ -817,6 +819,7 @@
     font-size: 16px;
     line-height: 23px;
     color: #474747;
+    flex-wrap: wrap;
 }
 .show-button,
 .hide-button {
@@ -831,6 +834,7 @@
     color: #4A58E1;
     text-decoration: dashed;
     border-bottom: 1px dashed #4a58e1;
+    white-space: nowrap;
 }
 .comment-list_message {
     margin-bottom: 30px;
@@ -857,6 +861,15 @@
 .comment-list_message:last-child {
     margin-bottom: 0;
 }
+.comment_bottom-info {
+    display: flex;
+}
+.comment-list_links {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 17px;
+}
 
 @media (max-width: 650px) {
     .comment {
@@ -864,11 +877,48 @@
     }
 }
 
-
-
+@media (max-width: 479px) {
+    .comment_bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .comment-date {
+        margin-bottom: 10px;
+    }
+    .comment-list_head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .comment-list_title {
+        margin-bottom: 15px;
+    }
+    .comment-list_message.children {
+        margin-left: 60px;
+    }
+    .comment_title {
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+    .comment-list_info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .comment-list_author {
+        margin-right: 0;
+        margin-bottom: 7px;
+    }
+    .comment-list_text {
+        padding: 15px;
+    }
+    .comment_text p {
+        font-size: 15px;
+        line-height: 19px;
+        margin-bottom: 15px;
+    }
+}
 
 /* COMMENT END */
-
 
 
 /* FOOTER START */
