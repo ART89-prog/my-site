@@ -1,0 +1,217 @@
+
+.header .lk-user {
+    padding-right: 36px;
+    display: flex;
+    align-items: center;
+}
+.header .lk-user__photo {
+    width: 48px;
+    height: 48px;
+}
+.header .lk-user__info {
+    width: calc(100% - 48px);
+    padding-left: 18px;
+}
+.header .lk-user__name {
+    color: #fff;
+}
+.header .lk-user__name .icon {
+    width: 12px;
+    height: 12px;
+    opacity: 0.6;
+}
+.header .lk-user p {
+    color: #fff;
+    opacity: 0.6;
+}
+.header .lk-user .logout {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 0;
+    width: 26px;
+    height: 32px;
+    margin-top: -16px;
+    background: url(../img/lk-menu/logout.svg) no-repeat center;
+}
+.header .lk-user .logout:hover {
+    opacity: 0.7;
+}
+@media (max-width: 990px) {
+    .header .lk-user {
+        display: none;
+    }
+}
+.logo img {
+    width: 195px;
+}
+@media (max-width: 735px) {
+    .logo img {
+        width: 126px;
+    }
+}
+
+
+.section--main {
+    padding-bottom: 50px;
+    background: url(../img/bg.png) no-repeat top center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+
+.timer-block {
+    padding: 95px 95px 140px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 88px rgba(86, 44, 147, 0.292282);
+    border-radius: 24px;
+}
+.timer-block_img {
+    text-align: center;
+}
+.timer-block_title {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.9px;    
+    color: #000000; 
+    margin-top: 46px;
+}
+.timer-block_text {
+    font-family: "Ubuntu";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #777777;
+    margin-top: 19px;
+}
+.timer {
+    background: #FFFFFF;
+    border: 1.6px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    max-width: 490px;
+    margin-top: 31px;
+    padding: 21px 21px 18px;
+}
+.timer__items {
+    display: flex;
+    font-size: 48px;
+  }
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 68px;
+    line-height: 78px;
+    text-align: center;
+    color: #000000;
+  }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+
+
+
+
+
+.footer {
+    background: #35146a;
+    padding: 26px 0;
+    z-index: 1;
+    margin: auto auto 0 auto;
+    width: 100%;
+}
+.footer .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@media (max-width: 735px) {
+    .footer .container {
+        display: block;
+    }
+}
+@media (max-width: 735px) {
+    .footer-col {
+        text-align: center;
+    }
+}
+.footer-col:last-child {
+    text-align: right;
+}
+@media (max-width: 735px) {
+    .footer-col:last-child {
+        text-align: center;
+    }
+}
+.footer-col__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@media (max-width: 735px) {
+    .footer-col__row {
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+.footer-link {
+    margin: 3px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    opacity: 0.37;
+    border-bottom: 1px dashed #fff;
+}
+.footer-link:hover {
+    opacity: 0.7;
+}
+.copyright {
+    margin-top: 12px;
+    opacity: 0.37;
+    color: #fff;
+}
+@media (max-width: 735px) {
+    .soc {
+        margin-top: 12px;
+    }
+}
+.soc a {
+    margin: 12px;
+    opacity: 0.37;
+}
+.soc a:hover {
+    opacity: 1;
+}
+.soc a img {
+    max-width: 30px;
+    max-height: 20px;
+}
