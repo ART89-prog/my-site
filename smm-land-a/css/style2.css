@@ -59,14 +59,8 @@
     background-size: cover;
     min-height: 100vh;
 }
-
-
-
-.timer-block {
-    padding: 95px 95px 140px;
-    background: #FFFFFF;
-    box-shadow: 0px 18px 88px rgba(86, 44, 147, 0.292282);
-    border-radius: 24px;
+.timer-promocode .timer-block {
+    margin-bottom: 87px;
 }
 .timer-block_img {
     text-align: center;
@@ -90,7 +84,11 @@
     color: #777777;
     margin-top: 19px;
 }
-.timer-block {
+.timer-promocode .main-content {
+    background: #FFFFFF;
+    padding: 95px 25px 45px;
+}
+.timer-blocks .main-content {
     background: #FFFFFF;
     padding: 95px 25px 140px;
 }
@@ -179,8 +177,85 @@
 }
 
 
+
+.freepromo {
+    padding-top: 18px;
+    border-top: 1px solid #DDDDDD;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+.freepromo .icon {
+    flex-shrink: 0;
+}
+.freepromo_title {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.75px;    
+    color: #000000;
+    margin-bottom: 30px;
+}
+.freepromo_item {
+    background: #F0EEF9;
+    border-radius: 8px;
+    padding: 18px 29px 18px 26px;
+    margin-bottom: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.freepromo_item:last-child {
+    margin-bottom: 0px;
+}
+.freepromo_item-right-no {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    color: #C21919;
+    margin-left: 10px;
+}
+.freepromo_item-right svg {
+    width: 32px;
+    height: 32px;
+}
+.freepromo_item-code {
+    font-family: "Ubuntu";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #9390AB;
+}
+.freepromo_item-right {
+    display: flex;
+}
+.freepromo_item .btn-copy {
+    font-family: "Ubuntu";
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3178EF;  
+    margin-right: 22px;
+    text-decoration: underline;
+}
+.freepromo_item-right-ok {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    color: #199A21;
+    margin-left: 10px;
+}
+
+
+
+
 @media (max-width: 560px) {
-    .timer-block {
+    .timer-blocks .main-content {
         padding: 55px 25px 60px;
     }
     .timer {
@@ -215,11 +290,35 @@
         line-height: 25px;
         margin-top: 15px;
     }
+    .freepromo_item-right {
+        width: 100%;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .freepromo_item {
+        flex-wrap: wrap;
+    }
+    .freepromo .icon {
+        margin-left: auto;
+    }
+    .timer-promocode .timer-block {
+        margin-bottom: 40px;
+    }
+    .freepromo_title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .timer-promocode .main-content {
+        background: #FFFFFF;
+        padding: 45px 25px 45px;
+    }
 
 }
 
 @media (max-width: 479px) {
-    .timer-block {
+    .timer-blocks .main-content,
+    .timer-promocode .main-content {
         padding: 30px 20px 30px;
     }
     .timer {
@@ -263,6 +362,23 @@
     }
     .section--main.timer-blocks {
         padding-bottom: 10px;
+    }
+    .freepromo_item .btn-copy {
+        font-size: 19px;
+        margin-right: 12px;
+        text-align: start;
+    }
+    .freepromo_item-right svg {
+        width: 20px;
+        height: 20px;
+    }
+    .freepromo_item {
+        padding: 11px 15px;
+    }
+    .freepromo_title {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 20px;
     }
    
 

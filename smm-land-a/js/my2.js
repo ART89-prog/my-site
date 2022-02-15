@@ -31,6 +31,21 @@ $(function(){
 		})
 	})
 
+
+  // Копирование ссылки
+  new ClipboardJS(".js-btn-clipboard").on("success", function(e) {
+
+  });
+
+  $('.js-copy-text').each(function(i, item) {
+      $(item).addClass('referrals_item-link-' + i);
+  });
+     
+  $(".js-btn-clipboard").click(function(e) {
+      var val = $(this).data("after-text");
+      $(this).text(val);
+  });
+
 })      
 
 
