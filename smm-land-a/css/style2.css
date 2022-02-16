@@ -292,7 +292,7 @@
     }
     .freepromo_item-right {
         width: 100%;
-        margin-top: 15px;
+        margin-top: 10px;
         align-items: center;
         justify-content: space-between;
     }
@@ -364,7 +364,7 @@
         padding-bottom: 10px;
     }
     .freepromo_item .btn-copy {
-        font-size: 19px;
+        font-size: 17px;
         margin-right: 12px;
         text-align: start;
     }
@@ -380,6 +380,15 @@
         line-height: 27px;
         margin-bottom: 20px;
     }
+    .freepromo_item-code {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .freepromo_item-right-ok {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
    
 
 }
