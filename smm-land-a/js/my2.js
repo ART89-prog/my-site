@@ -7,12 +7,16 @@ $(function(){
 
 
 		$(this).countdown(timerDate, function(event) {
+			let daysArr = event.strftime( '%D' ).split('')
 			let hoursArr = event.strftime( '%H' ).split('')
 			let minutesArr = event.strftime( '%M' ).split('')
 			let secondsArr = event.strftime( '%S' ).split('')
 
 			$(this).html( event.strftime(String()
-
+				+ '<div class="item">'
+					+ '<div class="val"><span>'+daysArr[0]+'</span><span>'+daysArr[1]+'</span></div>'
+					+ '<div>дней</div>'
+				+ '</div>'
 				+ '<div class="item">'
 					+ '<div class="val"><span>'+hoursArr[0]+'</span><span>'+hoursArr[1]+'</span></div>'
 					+ '<div>часов</div>'
